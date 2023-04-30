@@ -17,8 +17,17 @@ class BaseDao
         $host = Config::$host;
         $username = Config::$username;
         $password = Config::$password;
-        $schema = Config::$database;
+        $schema = Config::$schema;
         $port = Config::$port;
+
+        /*After setting up the deployment on the Digital Ocean, after the finalization of the whole project, 
+        this will be used instead of the part above, perhaps with minor changes
+        $host = Config::DB_HOST();
+        $username = Config::DB_USERNAME();
+        $password = Config::DB_PASSWORD();
+        $schema = Config::DB_SCHEMA();
+        $port = Config::DB_HOST();*/
+
         $this->conn = new PDO("mysql:host=$host;port=$port;dbname=$schema", $username, $password);
         // set the PDO error mode to exception
         $this->conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
