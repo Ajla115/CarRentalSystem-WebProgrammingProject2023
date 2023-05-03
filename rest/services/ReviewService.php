@@ -8,6 +8,8 @@ class ReviewService extends BaseService
     public function __construct()
     {
         parent::__construct(new ReviewDao);
+        $this->dao = new ReviewDao(); 
+        //I added this because it helped with certain routes, but is it neccesary
     }
 
 

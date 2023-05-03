@@ -1,25 +1,38 @@
 <?php
-
+//works
+//get information about all vehicles
 Flight::route('GET /api/vehicles', function () {
     Flight::json(Flight::vehicleService()->get_all());
 });
 
+//I assume this one will work as well, since all POST functions have worked so far
 Flight::route('POST /api/vehicle', function () {
     $data = Flight::request()->data->getData();
     Flight::json(Flight::vehicleService()->add($data));
 });
 
-Flight::route('GET /api/vehicles/@year', function ($year) {
+//does not work 
+Flight::route('GET /api/vehicles/year/@year', function ($year) {
     Flight::json(Flight::vehicleService()->getCarsProducedInCertainYear($year));
 });
-//This one needs to be checked again since it only shows me one output, however there are more, to be exact 5 outputs
 
-
-Flight::route('DELETE /api/vehicle/@vehicle_id', function ($vehicle_id) {
+//does not work
+Flight::route('DELETE /api/vehicles/@vehicle_id', function ($vehicle_id) {
     Flight::vehicleService()->delete($vehicle_id);
 });
 
-//2 routes still need to be checked and added
-//They are written in the BookingRoutes.php
+//does not work
+Flight::route('GET /api/vehicles/@vehicle_id', function ($vehicle_id) {
+    Flight::json(Flight::vehicleService()->get_by_id($vehicle_id));
+});
+
+//does not work
+Flight::route("PUT api/vehicles/@vehicle_id", function($vehicle_id){
+    $data = Flight::request()->data->getData();
+    Flight::json(['message' => 'Vehicle info edited succesfully', 'data' => Flight::vehicleService()->update($data, $vehicle_id)]); 
+    //-> converts the results to the JSON form
+    //This array we could have created above, store it in a variable, and then call that variable or do it directly like this
+});
+
 
 ?>

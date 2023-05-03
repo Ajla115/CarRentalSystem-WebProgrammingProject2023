@@ -16,7 +16,7 @@ class VehicleDao extends BaseDao
     //function to get a name and last name of the employee based on its id and location_id
     function getCarsProducedInCertainYear($year)
     {
-        return $this->query_unique("SELECT *
+        return $this->query("SELECT *
         FROM vehicles
         WHERE year = :year", ["year" => $year]);
     }

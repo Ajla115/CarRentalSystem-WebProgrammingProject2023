@@ -16,7 +16,7 @@ class ReviewDao extends BaseDao
     //function to get a name and last name of the employee based on its id and location_id
     function getCarsWithCertainScores($review_score)
     {
-        return $this->query_unique("SELECT *
+        return $this->query("SELECT *
         FROM reviews
         WHERE review_score = :review_score", ["review_score" => $review_score]);
     }

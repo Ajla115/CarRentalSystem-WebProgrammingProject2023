@@ -1,34 +1,50 @@
 <?php
-
+//works
+//get all bookings from database
 Flight::route('GET /api/bookings', function () {
     Flight::json(Flight::bookingService()->get_all());
-});
+}); 
 
+//works
+//add a new booking
 Flight::route('POST /api/bookings', function () {
     $data = Flight::request()->data->getData();
     Flight::json(Flight::bookingService()->add($data));
 });
 
-Flight::route('GET /api/bookings/@location_id', function ($location_id) {
+//works
+//but when I enter without PK, it gives me a random PK, quite bigger than autoincrementation, is that good or bad ?
+//be careful, because here a parameter is a LOCATION id, and not a BOOKING id
+//get all paid bookings based on a location
+Flight::route('GET /api/bookings/paid/@location_id', function ($location_id) {
     Flight::json(Flight::bookingService()->getPaidBookingsPerLocation($location_id));
 });
 
+//works
+//get all unpaid bookings based on a location
+Flight::route('GET /api/bookings/unpaid/@location_id', function ($location_id) {
+    Flight::json(Flight::bookingService()->getUnpaidBookingsPerLocation($location_id));
+});
 
-Flight::route('DELETE /api/booking/@booking_id', function ($booking_id) {
+//does not work!
+//delete all information regarding one booking based upon its id
+Flight::route('DELETE /api/bookings/@booking_id', function ($booking_id) {
     Flight::bookingService()->delete($booking_id);
 });
 
-//This one needs to be checked because I am not sure how to connect get_by_customer_id function with booking in this specific context
-/*Flight::route('GET /api/bookings/@booking_id', function ($booking_id) {
-    Flight::json(Flight::bookingService()->get_by_customer_id($booking_id));
-});*/
+//This one doesn't work, needs to be checked!
+//get all regarding one booking based on its id as parameter
+Flight::route('GET /api/bookings/@booking_id', function ($booking_id) {
+    Flight::json(Flight::bookingService()->get_by_id($booking_id));
+});
 
-
-//This one still needs to be adapted to bookingRoutes
-/*Flight::route('PUT /api/customers/@customer_id', function ($customer_id) {
+//also doesn't work!
+//update an existing booking
+Flight::route("PUT api/bookings/@booking_id", function($booking_id){
     $data = Flight::request()->data->getData();
-    Flight::customerService()->update($customer_id, $data);
-    Flight::json(Flight::customerService()->get_by_customer_id($customer_id));
-});*/
+    Flight::json(['message' => 'Booking edited succesfully', 'data' => Flight::bookingService()->update($data, $booking_id)]); 
+    //-> converts the results to the JSON form
+    //This array we could have created above, store it in a variable, and then call that variable or do it directly like this
+});
 
 ?>

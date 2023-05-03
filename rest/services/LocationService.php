@@ -11,14 +11,21 @@ class LocationService extends BaseService
     }
 
 
-    function getNumberOfBookingsPerLocation($location_id)
+    /*function getNumberOfBookingsPerLocation($location_id)
     {
         return $this->dao->getNumberOfBookingsPerLocation($location_id);
+    }*/
+
+    function getRentalShopBasedOnACity($location_id)
+    {
+        return $this->dao->getRentalShopBasedOnACity($location_id);
     }
 
-    function getRentalShopBasedOnACity($town)
+    function getContactInfo($location_id) 
     {
-        return $this->dao->getRentalShopBasedOnACity($town);
+        return $this->dao->getContactInfo($location_id);
     }
+
+     
 }
 ?>

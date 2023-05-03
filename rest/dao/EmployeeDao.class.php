@@ -11,9 +11,8 @@ class EmployeeDao extends BaseDao
     }
 
 
-    // custom function, which is not present in BaseDao
+    // custom function, which is not present in BaseDao to get a name and last name of the employee based on its id and location_id
     // query_unique -> returns only 1 result if multiple are present
-    //function to get a name and last name of the employee based on its id and location_id
     function getEmployeeByIdAndLocationId($employee_id, $location_id)
     {
         return $this->query_unique("SELECT employee_name, employee_surname
