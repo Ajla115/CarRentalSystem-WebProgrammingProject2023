@@ -6,3 +6,4 @@
    extremely bigger than all of the PKs of the entries in the DB, and this only happens here,
    with any other POST method, the new automatically generated PK is just for 1 bigger than the last PK of that table, 
    should this be considered a problem or not?
+6. Do we need more data in the database?
