@@ -1,5 +1,3 @@
-CREATE DATABASE  IF NOT EXISTS `rentacar` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
-USE `rentacar`;
 -- MySQL dump 10.13  Distrib 8.0.29, for Win64 (x86_64)
 --
 -- Host: 127.0.0.1    Database: rentacar
@@ -145,7 +143,7 @@ CREATE TABLE `locations` (
 
 LOCK TABLES `locations` WRITE;
 /*!40000 ALTER TABLE `locations` DISABLE KEYS */;
-INSERT INTO `locations` VALUES (1,'MD Sarajevo','Halilovici 13','Sarajevo','mds@info.ba',61547895,NULL),(2,'MD Mostar','Mostarska 2','Mostar','mdm@info.ba',65158702,NULL),(3,'MD Tuzla','Mejdan 1','Tuzla','mdt@info.ba',61325467,NULL),(5,'MD Bihac','Unska 23','Bihac','mdb@info.ba',62890809,NULL),(6,'MD Banja Luka','Vrbanska 45','Banja Luka','mdbl@info.ba',61345502,NULL);
+INSERT INTO `locations` VALUES (1,'MD Sarajevo','Halilovici 13','Sarajevo','mds@info.ba',61547895,NULL),(2,'MD Mostar','Mostarska 2','Mostar','mdm@info.ba',65158702,NULL);
 /*!40000 ALTER TABLE `locations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -215,4 +213,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-05-05 22:44:59
+-- Dump completed on 2023-05-08 23:33:10
