@@ -6,16 +6,18 @@ Flight::route('GET /customers', function () {
 });
 
 //works
+//get all information regarding one customer based upon its name and surname as parameters
+Flight::route('GET /customers/@customer_name/@customer_surname', function ($customer_name, $customer_surname) {
+    Flight::json(Flight::customerService()->getCustomerByFirstNameAndLastName($customer_name, $customer_surname));
+});
+
+//works
 //get all information regarding one customer based upon its id as a parameter
 Flight::route('GET /customers/@customer_id', function ($customer_id) {
     Flight::json(Flight::customerService()->get_by_id($customer_id));
 });
 
-//does not work
-//get all information regarding one customer based upon its name and surname as parameters
-Flight::route('GET /customers/@customer_name/@customer_surname', function ($customer_name, $customer_surname) {
-    Flight::json(Flight::customerService()->getCustomerByFirstNameAndLastName($customer_name, $customer_surname));
-});
+
 
 //works
 //add a new customer to the database

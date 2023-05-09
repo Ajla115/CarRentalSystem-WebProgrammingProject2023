@@ -1,0 +1,6 @@
+TypeScript kao wrapper za JS 
+JS nije statically typed, znaci pokusava da sve iz Booleana pretvori u nesto
+Library set funkcionalnosti, ovo je React
+Framework je sve, od pocetka do kraja kao Angular
+Za CDN je lose ako padne internet ode i nasa aplikacija, pa je zato to bolje spojiti preko prve opcije spomenute u opciji
+Za Single page application je dobro sto je brzo, medutim problem je sto mora sve povuci da bi napisao odg

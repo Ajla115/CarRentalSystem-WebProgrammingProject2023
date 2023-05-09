@@ -12,13 +12,13 @@ Flight::route('POST /locations', function () {
     Flight::json(Flight::locationService()->add($data));
 });
 
-//does not work
+//works
 //get number of bookings per location
 Flight::route('GET /locations/bookings/@location_id', function ($location_id) {
     Flight::json(Flight::locationService()->getNumberOfBookingsPerLocation($location_id));
 });
 
-//does not work
+//works
 /*get contact of a rental based on a location_id, however I wrote here id because the name in the DB table is id, and I thought perhaps
 that was creating the issue*/
 Flight::route('GET /locations/contact/@id', function ($id) {
