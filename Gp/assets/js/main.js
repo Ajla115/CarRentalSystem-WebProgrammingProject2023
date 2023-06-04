@@ -1,10 +1,4 @@
-/**
-* Template Name: Gp
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -396,21 +390,72 @@ document.addEventListener('DOMContentLoaded', function() {
 
 })()
 
+//ovo je za onaj password eye na login da moze vidjeti ili ne password
+document.querySelector('.toggle-password').addEventListener('click', function(e) {
+  const passwordInput = document.getElementById('typePasswordX');
+  if (passwordInput.type === 'password') {
+      passwordInput.type = 'text';
+      e.target.classList.replace('bi-eye-slash', 'bi-eye');
+  } else {
+      passwordInput.type = 'password';
+      e.target.classList.replace('bi-eye', 'bi-eye-slash');
+  }
+});
 
-
-
-document.addEventListener('DOMContentLoaded', function() {
-  var mySwiper = new Swiper('.swiper-container', {
-    slidesPerView: 'auto',
-    spaceBetween: 20,
-    grabCursor: true,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
+//za caroussel
+var swiper = new Swiper('.testimonial-carousel', {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: '#scroll-right',
+    prevEl: '#scroll-left',
+  },
+  breakpoints: {
+    999: {
+      slidesPerView: 1,
+      spaceBetween: 10
     },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
+  }
+});
+
+ // Initialize Toastr
+ toastr.options = {
+  "closeButton": false,
+  "debug": false,
+  "newestOnTop": false,
+  "progressBar": false,
+  "positionClass": "toast-top-right",
+  "preventDuplicates": false,
+  "onclick": null,
+  "showDuration": "300",
+  "hideDuration": "1000",
+  "timeOut": "500",
+  "extendedTimeOut": "1000",
+  "showEasing": "swing",
+  "hideEasing": "linear",
+  "showMethod": "fadeIn",
+  "hideMethod": "fadeOut",
+  "onHidden": function() { window.location.href = 'index.html'; }
+}
+
+
+$(document).ready(function() {
+  $(".btn").click(function(event) {
+    event.preventDefault();  // Prevent the default action
+    var firstName = $("#firstName").val();
+    var lastName = $("#lastName").val();
+    var email = $("#email").val();
+    var password = $("#password").val();
+    var confirmPassword = $("#confirmPassword").val();
+
+    // Check if any field is empty
+    if (firstName === "" || lastName === "" || email === "" || password === "" || confirmPassword === "") {
+      toastr.warning('Please fill in all fields.');
+    } else {
+      toastr.success('User added to the database.');
+    }
   });
 });
+
+
+

@@ -1,14 +1,302 @@
-/**
-* Template Name: Gp
-* Updated: Mar 10 2023 with Bootstrap v5.2.3
-* Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+/*za auto sto su na index.html, u discount section*/
+
+/* styles.css */
+
+
+.car-wrap {
+  margin-bottom: 40px;
+  background: #fff;
+  height: 400px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px; }
+.car-wrap .img {
+  width: 100%;
+  height: 212px;
+  position: relative;
+  background-size: cover;
+
+}
+  .car-wrap .text {
+    border-top: none;
+    padding: 20px 30px 30px; }
+
+
+    .car-wrap .text .price {
+      color:  darkgrey;
+      margin-bottom: 0;
+      font-weight: 500;
+      margin-left: 0; 
+     }
+     .car-wrap .text .price .crossed {
+      text-decoration: line-through;
+      color: red; /* Set the background color to red */
+      margin-bottom: 0;
+      font-weight: 500;
+      margin-left: 0; 
+     }
+
+     .car-wrap .text .price .bold-red {
+      color: red;
+      font-weight: bold;
+    }
+
+    .car-wrap .text h2 {
+      font-size: 20px;
+      font-weight: 500;
+     }
+      .car-wrap .text h2 a {
+        color: #000000; }
+    .car-wrap .text p.d-block {
+      width: 100%; }
+      .car-wrap .text p.d-block a {
+        width: 50%; }
+
+        .btn-secondary {
+          position: absolute;
+          width: 150px!important;
+          height: 53px;
+          left: 23px;
+          top: 300px;
+          background: #969399;
+          border-radius: 15px;
+          /* Add more styles as needed */
+        }
+    
+        .btn-secondary {
+          position: absolute;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 36px;
+          letter-spacing: 0.05em;
+          color: #FFFFFF;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          /* Add more styles as needed */
+        }
+    
+        .BookNowButton {
+          position: absolute;
+          width: 150px!important;
+          height: 53px;
+          left: 193px;
+          top: 300px;
+          background: #FFA500;
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+          border-radius: 15px;
+          font-family: 'Poppins';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 36px;
+          letter-spacing: 0.05em;
+          color: #FFFFFF;
+          text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          /* Add more styles as needed */
+        }
+        
+        .BookNowButton:hover {
+          background: #F09B00;
+        }
+        
+        .ButtonText {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+        }
+        
+        .ButtonText:hover {
+          color: #FFFFFF;
+        }
+
+
+
+/*za cars pricing stranicu*/
+.bg-primary{
+  background-color: #1887C7!important;
+ } 
+
+.bg-primary1 {
+  background-color: #1887C7!important;
+  border-radius: 10px 0px 0px 0px;
+ } 
+
+.bg-primary2 {
+  background-color: #1887C7!important;
+  border-radius: 0px 10px 0px 0px; 
+} 
+
+.table {
+  min-width: 1000px !important;
+  width: 100%; 
+}
+
+.table th {
+  font-weight: 550; 
+}
+
+.table .thead-primary {
+  background: transparent; 
+}
+
+/*Color of letters in header*/
+.table .thead-primary tr th {
+  padding: 30px 10px;
+  color: white!important;
+  border: 1px solid transparent !important; 
+}
+
+.table .thead-primary tr th.heading {
+  border-right: 1px solid white!important;
+  position: relative; 
+}
+
+.table .thead-primary tr th.heading:last-child {
+  border-right: none !important; 
+}
+
+.table tbody tr td {
+  vertical-align: middle;
+  padding: 30px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05) !important; 
+}
+
+    .table tbody tr td.car-image .img {
+      display: block;
+      width: 220px;
+      height: 130px;
+      margin: 0 auto; }
+
+      .table tbody tr td.car-image  {
+        border-bottom: 1px solid black !important; }
+
+
+   .table tbody tr td.product-name {
+          border-right: 1px solid black;
+          border-bottom: 1px solid black !important;
+    }
+    
+    .table tbody tr td.product-name h3 {
+      font-size: 20px; 
+      font-weight: 800;
+    }
+
+    .table tbody tr td.product-name  span {
+      font-size: 16px;
+      font-weight: 400; }
+
+
+    .table tbody tr td.price {
+      text-align: center !important;
+      background: white;
+      border-right: 1px solid black;
+      border-bottom: 1px solid black !important;
+      position: relative;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+
+
+      .table tbody tr .carleftside {
+        text-align: center !important;
+        background: white;
+        border-left: 1px solid black;
+        border-bottom: 1px solid black !important;
+        position: relative;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+
+      .table tbody tr td.price:last-child {
+        border-left: none; }
+
+      .table tbody tr td.price h3 {
+        position: relative; }
+
+        .table tbody tr td.price h3 span.num {
+          color: black;
+          font-size: 20px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          position: relative; }
+
+
+          .table tbody tr td.price h3 span.num .crossed {
+            position: relative;
+            display: inline-block;
+          }
+          
+          .table tbody tr td.price h3 span.num .crossed::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: red;
+            z-index: 1;
+          }
+          
+          .table tbody tr td.price h3 span.num .bold-red {
+            font-weight: bold;
+            color: red;
+          }
+          
+
+      
+
+      .table tbody tr td.price .subheading {
+        font-size: 14px; }
+
+      .table tbody tr td.price .btn-custom {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        opacity: 0;
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        z-index: 1; }
+
+        .table tbody tr td.price .btn-custom a {
+          font-size: 20px;
+          font-weight: 800;
+          color: #FFA500;
+        }
+      
+
+      .table tbody tr td.price .price-rate {
+        -moz-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        -webkit-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+
+      .table tbody tr td.price:hover.price {
+        background: transparent; }
+
+      .table tbody tr td.price:hover .btn-custom {
+        opacity: 1; }
+
+      .table tbody tr td.price:hover .price-rate {
+        opacity: 0; }
+
+
 
 /*--------------------------------------------------------------
-# General
+# Generalne stvari
 --------------------------------------------------------------*/
+
 
 
 body {
@@ -17,23 +305,26 @@ body {
 }
 
 a {
-  color: #ffc451;
+  color: #FFA500;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ffd584;
+  color: #F09B00;
   text-decoration: none;
 }
+/*ni ovaj mi hover ne radi*/s
 
 h1,
 h2,
 h3,
 h4,
 h5,
-h6 {
+h6, 
+button {
   font-family: "Raleway", sans-serif;
 }
+/*ne radi mi ovdje za button ovaj font*/
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -129,6 +420,8 @@ h6 {
   
 }
 
+
+
 #header.header-scrolled,
 #header.header-inner-pages {
   background: rgba(0, 0, 0, 0.8);
@@ -149,7 +442,7 @@ h6 {
 }
 
 #header .logo a span {
-  color: #ffc451;
+  color: #1887C7;
 }
 
 #header .logo img {
@@ -194,50 +487,127 @@ h6 {
   max-height: 40px;
 }
 
-@media (max-width: 768px){
-  #header2{
-    width: 390px;
-    
-  }
-}
-
-  
-@media (max-width: 768px){
-  body {
-    overflow-x: hidden;
-  }
-
-}
-
-
-
-
-
-
 
 /*--------------------------------------------------------------
-#  Get Startet Button
+#  Sign Up  Button
 --------------------------------------------------------------*/
-.get-started-btn {
+/*.btn2-primary {
   color: #fff;
   border-radius: 4px;
-  padding: 7px 25px 8px 25px;
+  padding: 5px 15px; 
   white-space: nowrap;
   transition: 0.3s;
   font-size: 14px;
   display: inline-block;
   border: 2px solid #ffc451;
+  text-align: center; 
 }
 
-.get-started-btn:hover {
+.btn2-primary:hover {
   background: #ffbb38;
   color: #343a40;
+}*/
+
+/*@media (max-width: 999px) {
+  .btn-nav {
+    padding: 4px 10px; 
+  }
+}*/
+
+
+.btn-nav {
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 16;
+  padding: 6px 15px; /* Reduced padding to shrink the button */
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  text-align: center;
 }
 
-@media (max-width: 992px) {
-  .get-started-btn {
-    padding: 7px 20px 8px 20px;
-    margin-right: 15px;
+.btn-nav:hover, 
+.btn-nav:focus, 
+.btn-nav:active {
+  background-color: darkorange;
+}
+
+.navbar li .btn-nav {
+  line-height: 1;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar li a.btn-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orange;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 6px 15px; /* Reduced padding to shrink the button */
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  text-decoration: none; /* Optional: remove underline from link */
+}
+
+.navbar li a.btn-nav:hover, 
+.navbar li a.btn-nav:focus, 
+.navbar li a.btn-nav:active {
+  background-color: darkorange;
+}
+
+@media (max-width: 999px) {
+  .navbar li a.btn-nav {
+    padding: 3px 7px; /* Reduced padding to shrink the button */
+    max-width: 100px;  /* further reduced maximum width */
+    display: inline-block; /* kept from previous changes */
+    margin-left: 10px; /* added left margin */
+  }
+}
+
+
+
+/*Part to make user profile responsive*/
+.custom-div {
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.section-title .user-logo {
+  width: 120px;
+  height: 150px;
+}
+
+.section-title .user-name {
+  font-weight: 600;
+  color: black;
+  text-transform: none;
+  text-align: center;
+}
+
+.title {
+  font-weight: 400;
+}
+
+@media screen and (max-width: 600px) {
+   .section-title .user-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .section-title .user-name {
+    font-size: 18px;
   }
 }
 
@@ -247,6 +617,11 @@ h6 {
 /**
 * Desktop Navigation 
 */
+
+/*.user-nav-link {
+  margin-left: 10px;
+}*/
+ 
 .navbar {
   padding: 0;
 }
@@ -283,11 +658,15 @@ h6 {
   margin-left: 5px;
 }
 
+/*doradeno*/
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
-  color: #ffc451;
+.navbar li:hover>a
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul .active:hover,
+.navbar .dropdown ul li:hover>a {
+  color: #1887C7;
 }
 
 .navbar .dropdown ul {
@@ -300,7 +679,7 @@ h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #fff;
+  background: #000000;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -313,7 +692,7 @@ h6 {
   padding: 10px 20px;
   font-size: 14px;
   text-transform: none;
-  color: #151515;
+  color: #f0f0f0;
   font-weight: 400;
 }
 
@@ -321,11 +700,7 @@ h6 {
   font-size: 12px;
 }
 
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-  background-color: #ffc451;
-}
+
 
 .navbar .dropdown:hover>ul {
   opacity: 1;
@@ -355,6 +730,7 @@ h6 {
     left: -100%;
   }
 }
+
 
 /**
 * Mobile Navigation 
@@ -404,7 +780,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #000000;
   overflow-y: auto;
   transition: 0.3s;
 }
@@ -413,14 +789,15 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #151515;
+  color:white;
 }
 
+/*This is for elements in the navbar list, when they're actove or hovered over*/
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: #151515;
-  background-color: #ffc451;
+  color: #1887C7;
+  background-color: black;
 }
 
 .navbar-mobile .getstarted,
@@ -436,7 +813,7 @@ h6 {
   z-index: 99;
   opacity: 1;
   visibility: visible;
-  background: #fff;
+  background: black;
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
 }
 
@@ -446,17 +823,20 @@ h6 {
 
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
-  color: #151515;
+  color: white;
 }
 
 .navbar-mobile .dropdown ul a i {
   font-size: 12px;
 }
 
+/*sredeno*/
+/*This is for drop down elements in the navbar list, when they're actove or hovered over*/
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  background-color: #ffc451;
+  color: #1887C7;
+  background-color: black;
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
@@ -646,19 +1026,6 @@ color: #000000;
 #hatch .section-title h1 span {
   color: #1887C7;
 }
-
-/*#hatch .section-title h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #8e1010;
-  text-align: center;
-  z-index: 2;
-}
-*/
-
-
 
 .image-container img{
   position: relative;
@@ -3422,118 +3789,16 @@ flex-grow: 0;
 
 
 
-@media (max-width: 991.98px) {
-  #sedan {
-    height: 853px; }
-    #sedan{
-      height: 853px; } }
-
-
-/*--------------------------------------------------------------
-# Sedan Detail Section
---------------------------------------------------------------*/
-.sedandetail h1{
-  position: absolute;
-  width: 113px;
-  height: 44px;
-  left: 38px;
-  top: 137px;
-
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-text-align: center;
-
-color: #000000;
-}
-
-.sedanlinedetail{position: absolute;
-  width: 371.49px;
-  height: 0px;
-  left: 133.51px;
-  top: 163px;
-  
-  border: 1px solid #0BB5FF;
-
-}
-
- .octavia h1{
-  position: absolute;
-  width: 371px;
-  height: 59px;
-  left: 775px;
-  top: 236px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  
-  color: #000000;
+@media (min-width: 1024px) {
+  #hatch {
+    background-attachment: fixed;
   }
-
-
-
-  .sedanreviewsContainer {
-  
-    position: absolute;
-    width: 166px;
-    height: 166px;
-    left: 99px;
-    top: 1394px;
-    background: url(lamijakolic.jpeg);
-    background-size: cover;
-    background-position: center;
-    border-radius: 50%;
- 
-}
-
-
-.sedanReviewsClientContainer {
-  box-sizing: border-box;
-  position: absolute;
-  width: 931px;
-  height: 186px;
-  left: 298px;
-  top: 1400px;
-  background: #FFFFFF;
-  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-}
-
-
-.sedanReviewsClientContainer h1{
-  position: absolute;
-width: 881px;
-height: 248px;
-left: 20px;
-top: 19px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-text-align: justify;
-
-color: #000000;
-
 }
 
 @media (max-width: 768px) {
-  .sedanreviewsContainer{
-    position: absolute;
-    width: 166px;
-    height: 150.77px;
-    left: 111px;
-    top: 2592px;
-    z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
-}
+  #hatch {
+    height: auto;
+  }
 }
 
 
@@ -5346,1849 +5611,17 @@ background: #ffffff;
 }
 
 
-/* For titles*/
-.section-title p::after {
-  content: "";
-  width: 120px;
-  height: 2px;
-  display: inline-block;
-  background:#0BB5FF;
-  margin: 4px 10px;
-}
-
-
-
-@media (max-width: 991.98px) {
-  #wagon {
-    height: 853px; }
-    #wagon{
-      height: 853px; } }
-
-
-/*--------------------------------------------------------------
-# Wagon Detail Section
---------------------------------------------------------------*/
-.wagondetail h1{
-  position: absolute;
-  width: 113px;
-  height: 44px;
-  left: 38px;
-  top: 137px;
-
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-text-align: center;
-
-color: #000000;
-}
-
-.wagonlinedetail{position: absolute;
-  width: 371.49px;
-  height: 0px;
-  left: 143.51px;
-  top: 163px;
-  
-  border: 1px solid #0BB5FF;
-
-}
-
- .volvo h1{
-  position: absolute;
-  width: 371px;
-  height: 59px;
-  left: 725px;
-  top: 236px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  
-  color: #000000;
+@media (min-width: 1024px) {
+  #hatch {
+    background-attachment: fixed;
   }
-
-
-
-  .wagonreviewsContainer {
-  
-    position: absolute;
-    width: 166px;
-    height: 166px;
-    left: 99px;
-    top: 1394px;
-    background: url(jurica.jpeg);
-    background-size: cover; 
-    border-radius: 50%;
- 
-}
-
-
-.wagonReviewsClientContainer {
-  box-sizing: border-box;
-  position: absolute;
-  width: 931px;
-  height: 216px;
-  left: 298px;
-  top: 1400px;
-  background: #FFFFFF;
-  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-}
-
-
-.wagonReviewsClientContainer h1{
-  position: absolute;
-width: 881px;
-height: 248px;
-left: 20px;
-top: 19px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-text-align: justify;
-
-color: #000000;
-
 }
 
 @media (max-width: 768px) {
-  .wagonreviewsContainer{
-    position: absolute;
-    width: 166px;
-    height: 150.77px;
-    left: 111px;
-    top: 2592px;
-    z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
-}
-}
-
-
-@media (max-width: 768px) {
-  .wagonreviewsContainerText h1{
-  
-    position: absolute;
-  width: 177px;
-  height: 34.57px;
-  left: 106px;
-  top: 2750.46px;
-  
-  
-  }}
-
-
-  @media (max-width: 768px) {
-      .wagonReviewsClientContainer{
-        position: absolute;
-        width: 331.96px;
-        height: 490.63px;
-        left: 28.52px;
-        top: 2832.37px;
-    }
-    }
-    
-    
-    
-    @media (max-width: 768px) {
-      .wagonReviewsClientContainer h1{
-        position: absolute;
-        width: 300.96px;
-        height: 655.63px;
-        left: 15px;
-        top: 32.37px;
-        font-size: 16px;
-    }
-    }
-    
-
-    @media (max-width: 768px) {
-      .wagondetail h1 {
-        position: absolute;
-        width: 149px;
-        height: 35px;
-        left: -41px;
-        top: 101px;
-        font-size: 16px;
-      }
-      
-      .wagonlinedetail {
-        position: absolute;
-        width: 382.5px;
-        height: 0.53px;
-        left: 64px;
-        top: 122.5px;
-        
-        
-      }
-    }
-
-
-
-/*--------------------------------------------------------------
-# Wagon Payment Section
---------------------------------------------------------------*/
-
-
-.WagonRentalDetailsHeading h1{
-
-  position: absolute;
-  width: 203px;
-  height: 22px;
-  left: 36px;
-  top: 150px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 36px;
-  text-align: center;
-  
-  color: #000000;
-}
-
-.WagonlineRentalDetailsHeading{
-
-  position: absolute;
-width: 276px;
-height: 0px;
-left: 230px;
-top: 176px;
-
-border: 1px solid #1887C7;
-}
-
-
-
-
-.WagonRentalDetailsContainer1{
-
-  position: absolute;
-width: 1139px;
-height: 59px;
-left: 123px;
-top: 234px;
-
-background: #1887C7;
-border-radius: 10px 10px 0px 0px;
-}
-
-
-.WagonRentalDetailsContainer1 h1{
-  position: absolute;
-  width: 283px;
-  height: 42px;
-  left: 95px;
-  top: 11px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0.05em;
-  
-  color: #FFFFFF;
-  
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-
-
-.WagonRentalDetailsContainer1 h2{
-
-  position: absolute;
-  width: 226px;
-  height: 33px;
-  left: 517px;
-  top: 11px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0.05em;
-  
-  color: #FFFFFF;
-  
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-
-
-.WagonRentalDetailsContainer2{
-
-  box-sizing: border-box;
-
-position: absolute;
-width: 1139px;
-height: 59px;
-left: 123px;
-top: 293px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-}
-
-
-.WagonRentalDetailsContainer2 h1{
-
-position: absolute;
-width: 222px;
-height: 40px;
-left: 95px;
-top: 13px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #000000;
-
-}
-
-.WagonRentalDetailsContainer2 h2{
-
-
-position: absolute;
-width: 222px;
-height: 40px;
-left: 510px;
-top: 13px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #000000;
-
-}
-
-
-.WagonRentalDetailsContainer3{
-
-position: absolute;
-width: 1139px;
-height: 59px;
-left: 123px;
-top: 352px;
-
-background: #1887C7;
-
-
-}
-
-.WagonRentalDetailsContainer3 h1{
-  position: absolute;
-width: 203px;
-height: 42px;
-left: 95px;
-top: 13px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
-.WagonRentalDetailsContainer3 h2{
-
-  position: absolute;
-width: 176px;
-height: 42px;
-left: 532px;
-top: 13px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
-.WagonRentalDetailsContainer3 h3{
-
-  position: absolute;
-  width: 115px;
-  height: 42px;
-  left: 964px;
-  top: 13px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0.05em;
-  
-  color: #FFFFFF;
-  
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
-
-.WagonRentalDetailsContainer4{
-  box-sizing: border-box;
-
-position: absolute;
-width: 1139px;
-height: 59px;
-left: 123px;
-top: 411px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-
-}
-
-
-.WagonRentalDetailsContainer4 h1{
-  position: absolute;
-width: 222px;
-height: 40px;
-left: 95px;
-top: 10px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #000000;
-
-}
-
-
-.WagonRentalDetailsContainer4 h2{
-
-  position: absolute;
-  width: 242px;
-  height: 40px;
-  left: 510px;
-  top: 10px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 36px;
-  letter-spacing: 0.05em;
-  
-  color: #000000;
-}
-
-.WagonRentalDetailsContainer4 h3{
-
-
-  position: absolute;
-width: 117px;
-height: 40px;
-left: 964px;
-top: 10px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #000000;
-}
-
-
-
-.WagonRentalDetailsContainer5 {
-
-  position: absolute;
-width: 1139px;
-height: 59px;
-left: 123px;
-top: 470px;
-
-background: #1887C7;
-
-}
-
-
-.WagonRentalDetailsContainer5 h1{
-  position: absolute;
-width: 203px;
-height: 42px;
-left: 95px;
-top: 14px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
-.WagonRentalDetailsContainer5 h2{
-  position: absolute;
-width: 90px;
-height: 33px;
-left: 576px;
-top: 14px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
-.WagonRentalDetailsContainer5 h3{
-  position: absolute;
-width: 83px;
-height: 42px;
-left: 964px;
-top: 14px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
-
-.WagonRentalDetailsContainer6{
-  box-sizing: border-box;
-
-position: absolute;
-width: 1139px;
-height: 59px;
-left: 123px;
-top: 529px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-
-}
-
-.WagonRentalDetailsContainer6 h1{
-  position: absolute;
-width: 133px;
-height: 40px;
-left: 95px;
-top: 14px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #000000;
-  
-}
-
-.WagonRentalDetailsContainer6 h2{
-  position: absolute;
-width: 222px;
-height: 40px;
-left: 517px;
-top: 14px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #000000;
-
-  
-}
-
-.WagonRentalDetailsContainer6 h3{
-  position: absolute;
-width: 34px;
-height: 40px;
-left: 1000px;
-top: 14px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #000000;
-  
-}
-
-
-
-.WagonRentalDetailsContainer7{
-  position: absolute;
-width: 1139px;
-height: 59px;
-left: 123px;
-top: 588px;
-
-background: #1887C7;
-
-}
-
-
-.WagonRentalDetailsContainer7 h1{
-  position: absolute;
-width: 111px;
-height: 42px;
-left: 95px;
-top: 14px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #FFFFFF;
- 
-
-}
-
-
-
-
-.WagonRentalDetailsContainer8{
-  box-sizing: border-box;
-
-position: absolute;
-width: 1139px;
-height: 59px;
-left: 123px;
-top: 646px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-
-
-}
-
-.WagonRentalDetailsContainer8 h1{
-  position: absolute;
-width: 204px;
-height: 34px;
-left: 82px;
-top: 14px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #000000;
-
-}
-
-.WagonRentalDetailsContainer8 h2{
-
-position: absolute;
-width: 130px;
-height: 37px;
-left: 964px;
-top: 14px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #000000;
-
-
-}
-
-
-.WagonRentalDetailsContainer9{
-
-
-box-sizing: border-box;
-
-position: absolute;
-width: 1139px;
-height: 59px;
-left: 123px;
-top: 704px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-
-}
-
-
-.WagonRentalDetailsContainer9 h1{
-  position: absolute;
-  width: 204px;
-  height: 34px;
-  left: 82px;
-  top: 14px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #000000;
-
-}
-
-.WagonRentalDetailsContainer9 h2{
-  position: absolute;
-  width: 130px;
-  height: 37px;
-  left: 964px;
-  top: 14px;
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #000000;
-  
-}
-
-
-.WagonRentalDetailsContainer10{
-
-  box-sizing: border-box;
-
-position: absolute;
-width: 1139px;
-height: 59px;
-left: 123px;
-top: 761px;
-
-background: #FFFFFF;
-border: 1px solid #000000;
-border-radius: 0px 0px 10px 10px;
-}
-
-.WagonRentalDetailsContainer10 h1{
-
-  position: absolute;
-  width: 130px;
-  height: 37px;
-  left: 964px;
-  top: 14px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 24px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #000000;
-
-}
-
-
-
-
-
-#WagonEditRentalButton {
-  position: absolute;
-  width: 334px;
-  height: 61px;
-  left: 463px;
-  top: 855px;
-  background: #969399;
-   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-        border-radius: 10px;
-    }
-
-
-
-#WagonChooseAnotherVehicleButton {
-position: absolute;
-width: 334px;
-height: 61px;
-left: 845px;
-top: 855px;
-
-
-background: #969399;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-
-
-}
-
-#WagonEditRentalButton h1{
-position: absolute;
-width: 352px;
-height: 39px;
-left: -10px;
-top: 13px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
-}
-
-#WagonChooseAnotherVehicleButton h1{
-
-position: absolute;
-width: 352px;
-height: 39px;
-left: -7px;
-top: 13px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 700;
-font-size: 20px;
-line-height: 36px;
-letter-spacing: 0.05em;
-
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-}
-
-
-
-
-#WagonEditRentalButton:hover{
-background: #0BB5FF;
-}
-
-#WagonChooseAnotherVehicleButton:hover{
-background: #0BB5FF;
-}
-
-#WagonEditRentalButton:active{
-background: #1887C7;
-}
-
-#WagonChooseAnotherVehicleButton:active{
-background: #1887C7;
-}
-
-/*Payment  WAGON Section*/
-
-.WagonPaymentDetailsHeading h1{
-
-  position: absolute;
-width: 391px;
-height: 35px;
-left: 40px;
-top: 960px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-text-align: center;
-letter-spacing: 0.05em;
-
-color: #000000;
-
-}
-
-.WagonlinePaymentDetailsHeading{
-
-  position: absolute;
-  width: 371.02px;
-  height: 0px;
-  left: 424px;
-  top: 986px;
-  
-  border: 1px solid #1887C7;
-
-}
-
-
-
-.WagonPaymentInfoContainer{
-
-  display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 16px 30px 30px;
-gap: 24px;
-
-position: absolute;
-width: 360px;
-height: 584px;
-left: 533px;
-top: 1050px;
-
-background: #FFFFFF;
-box-shadow: 0px 4px 20px rgba(77, 166, 186, 0.38);
-border-radius: 15px;
-}
-
-
-
-.WagonPaymentInfoContainer h1{
-  position: absolute;
-  top: 65px;
-  left: 97.5px;
-  width: 165px;
-  height: 36px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 36px;
-
-  color: #1887C7;
-  
-
-}
-
-.WagonPaymentInfoContainer h2{
-position: absolute;
-top: 122px;
-left: 30px;
-width: 79px;
-height: 24px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-
-
-color: #000000;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-
-}
-
-.WagonPaymentInfoNameContainer {
-  position: absolute;
-  top: 156px;
-  left: 30px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px 12px;
-  gap: 10px;
-  width: 300px;
-  height: 40px;
-  background: #E2E6EE;
-  border: 1px solid #E2E6EE;
-  box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
-  border-radius: 10px;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
-.WagonPaymentInfoNameContainer input {
-  width: 100%;
-  height: 100%;
-  border: none;
-  background: none;
-  outline: none;
-}
-
-
-
-
-.WagonPaymentInfoContainer h3{
-position: absolute;
-top: 220px;
-left: 30px;
-width: 162px;
-height: 24px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-
-
-color: #000000;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-
-
-
-  .WagonPaymentInfoCardContainer {
-    position: absolute;
-    top: 254px;
-    left: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px 12px;
-    gap: 10px;
-    width: 300px;
-    height: 40px;
-    background: #E2E6EE;
-    border-radius: 10px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-
-  .WagonPaymentInfoCardContainer input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: none;
-    outline: none;
-  }
-
-
-  .WagonPaymentInfoContainer h4{
-    /* Exp Date */
-
-position: absolute;
-top: 318px;
-left: 30px;
-width: 69px;
-height: 24px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-
-
-/* Black */
-
-color: #030102;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-
-  }
-
-  .WagonPaymentExpDateCardContainer {
-    position: absolute;
-    top: 352px;
-    left: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 8px 12px;
-    gap: 10px;
-    width: 144px;
-    height: 40px;
-    background: #E2E6EE;
-    border-radius: 10px;
-    flex: none;
-    order: 1;
-    align-self: stretch;
-    flex-grow: 0;
-  }
-
-  .WagonPaymentExpDateCardContainer input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    background: none;
-    outline: none;
-  }
-
-
-
- .WagonPaymentInfoContainer h5{
-    /* CVV */
-  
-  position: absolute;
-  top: 318px;
-  left: 186px;
-  width: 34px;
-height: 24px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-
-
-/* Black */
-
-color: #030102;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-
-}
-
-
-.WagonPaymentCVVCardContainer {
-  position: absolute;
-  top: 352px;
-  left: 186px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px 12px;
-  gap: 10px;
-  width: 144px;
-  height: 40px;
-  background: #E2E6EE;
-  border-radius: 10px;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
-.WagonPaymentCVVCardContainer input {
-  width: 100%;
-  height: 100%;
-  border: none;
-  background: none;
-  outline: none;
-}
-
-
-.WagonPaymentInfoContainer h6{
-
-position: absolute;
-top: 416px;
-left: 30px;  
-width: 81px;
-height: 24px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height */
-
-
-/* Black */
-
-color: #030102;
-
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-
-
-.WagonPaymentZipCodeCardContainer {
-  position: absolute;
-  top: 450px;
-  left: 30px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px 12px;
-  gap: 10px;
-  width: 300px;
-  height: 40px;
-  background: #E2E6EE;
-  border-radius: 10px;
-  flex: none;
-  order: 1;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
-.WagonPaymentZipCodeCardContainer input {
-  width: 100%;
-  height: 100%;
-  border: none;
-  background: none;
-  outline: none;
-}
-
-
-.WagonPaymentButton {
-  position: absolute;
-  top: 514px;
-  left: 30px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 12px 24px;
-  gap: 10px;
-  
-  width: 300px;
-  height: 40px;
-  
-  background: #FFA500;
-  border-radius: 10px;
-  
-  /* Inside auto layout */
-  
-  flex: none;
-  order: 0;
-  align-self: stretch;
-  flex-grow: 0;
-}
-
-
-.WagonPaymentButton h1{
-
-position: absolute;
-top: 3px;
-left: 54px;
-width: 192px;
-height: 30px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 600;
-font-size: 20px;
-line-height: 30px;
-/* identical to box height */
-
-text-transform: uppercase;
-
-color: #FFFFFF;
-
-text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-/* Inside auto layout */
-
-flex: none;
-order: 0;
-flex-grow: 0;
-}
-
-
-.WagonPaymentButton:hover{
-  background: #F09B00;
-}
-
-.WagonPaymentButton:active{
-  background: #F09B00;
-}
-
-
-
-.WagonPaymentLogo {
-  position: absolute;
-  top: 29px;
-  left:160.5px;
-  height: 24px;
-  width: 39px;
-  
-
-background: #ffffff;
-
-
-
-}
-
-.WagonPaymentLogo img {
-  /* Adjust the image width and height as per your requirements */
-  width: 39px;
-  height: 24px;
-  object-fit: contain;
-}
-
-
-@media (max-width: 768px) {
-  .WagonPaymentInfoContainer{
-    left: 13px;
-    top: 1700px;
-  }
-  
-}
-
-@media (max-width: 768px) {
-  .WagonRentalDetailsHeading h1{
-    position: absolute;
-    width: 269.7px;
-    height: 47px;
-    left: -68px;
-    top: 98px;
-    font-size: 16px;
-  
-    
-  }
-  .WagonlineRentalDetailsHeading{
-    position: absolute;
-    width: 261.5px;
-    height: 0px;
-    left: 128.5px;
-    top: 120px;
-
+  #hatch {
+    height: auto;
   }
 }
-
-
-@media (max-width: 768px) {
-  .WagonRentalDetailsContainer1 {
-    visibility: hidden;
-    height: 0;
-  }
-}
-@media (max-width: 768px) {
-  .WagonRentalDetailsContainer1 h1{
-    display: block;
-    visibility: visible;
-    position: absolute;
-    width: 351px;
-    height: 56px;
-    left: 72px;
-    top: 0px;
-    background: #1887C7;
-    font-size: 20px;
-    text-align: center; 
-    transform: translate(-50%, -50%);
-  }
-
-}
-@media (max-width: 768px) {
-  .WagonRentalDetailsContainer1 h2{
-    display: block;
-    visibility: visible;
-    position: absolute;
-    width: 351px;
-    height: 52px;
-    left: 72px;
-    top: 110px;
-    background: #1887C7;
-    font-size: 20px;
-    text-align: center; 
-    transform: translate(-50%, -50%);
-  }
-
-}
-
-
-
-
-
-
-@media (max-width: 768px) {
-  .WagonRentalDetailsContainer2 {
-    visibility: hidden;
-    height: 0;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .WagonRentalDetailsContainer2 h1{
-    display: block;
-    visibility: visible;
-    position: absolute;
-    width: 351px;
-    height: 56px;
-    left: 71px;
-    top: -4px;
-    background: #ffffff;
-    border: 1px solid black;
-    font-size: 20px;
-    text-align: center; 
-    transform: translate(-50%, -50%);
-  }
-
-}
-
-@media (max-width: 768px) {
-  .WagonRentalDetailsContainer2 h2{
-    display: block;
-    visibility: visible;
-    position: absolute;
-    width: 351px;
-    height: 56px;
-    left: 71px;
-    top: 104px;
-    background: #ffffff;
-    border: 1px solid black;
-    font-size: 20px;
-    text-align: center; 
-    transform: translate(-50%, -50%);
-  }
-
-}
-
-
-@media (max-width: 768px) {
-  .WagonRentalDetailsContainer3 {
-    visibility: hidden;
-    height: 0;
-  }
-}
-@media (max-width: 768px) {
-  .WagonRentalDetailsContainer3 h1{
-    display: block;
-    visibility: visible;
-    position: absolute;
-    width: 351px;
-    height: 56px;
-    left: 72px;
-    top: 102px;
-    background: #1887C7;
-    font-size: 20px;
-    text-align: center; 
-    transform: translate(-50%, -50%);
-  }
-
-}
-@media (max-width: 768px) {
-  .WagonRentalDetailsContainer3 h2{
-    display: block;
-    visibility: visible;
-    position: absolute;
-    width: 351px;
-    height: 52px;
-    left: 72px;
-    top: 208px;
-    background: #1887C7;
-    font-size: 20px;
-    text-align: center; 
-    transform: translate(-50%, -50%);
-  }
-
-}
-
-
-@media (max-width: 768px) {
-  .WagonRentalDetailsContainer4 {
-    visibility: hidden;
-    height: 0;
-  }
-}
-
-
-@media (max-width: 768px) {
-  .WagonRentalDetailsContainer4 h1{
-    display: block;
-    visibility: visible;
-    position: absolute;
-    width: 351px;
-    height: 56px;
-    left: 71px;
-    top: 98px;
-    background: #ffffff;
-    border: 1px solid black;
-    font-size: 20px;
-    text-align: center; 
-    transform: translate(-50%, -50%);
-  }
-
-}
-
-@media (max-width: 768px) {
-  .WagonRentalDetailsContainer4 h2{
-    display: block;
-    visibility: visible;
-    position: absolute;
-    width: 351px;
-    height: 56px;
-    left: 71px;
-    top: 202px;
-    background: #ffffff;
-    border: 1px solid black;
-    font-size: 20px;
-    text-align: center; 
-    transform: translate(-50%, -50%);
-  }
-
-}
-
-
-
-
-
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer5 {
-        visibility: hidden;
-        height: 0;
-      }
-    }
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer5 h1{
-        display: block;
-        visibility: visible;
-        position: absolute;
-        width: 351px;
-        height: 56px;
-        left: 72px;
-        top: 200px;
-        background: #1887C7;
-        font-size: 20px;
-        text-align: center; 
-        transform: translate(-50%, -50%);
-      }
-    
-    }
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer5 h2{
-        display: block;
-        visibility: visible;
-        position: absolute;
-        width: 351px;
-        height: 52px;
-        left: 72px;
-        top: 304px;
-        background: #1887C7;
-        font-size: 20px;
-        text-align: center; 
-        transform: translate(-50%, -50%);
-      }
-    }
-
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer5 h3{
-        display: block;
-        visibility: visible;
-        position: absolute;
-        width: 351px;
-        height: 52px;
-        left: 72px;
-        top: 408px;
-        background: #1887C7;
-        font-size: 20px;
-        text-align: center; 
-        transform: translate(-50%, -50%);
-      }
-    }
-    
-    
-
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer6 {
-        visibility: hidden;
-        height: 0;
-      }
-    }
-    
-    
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer6 h1{
-        display: block;
-        visibility: visible;
-        position: absolute;
-        width: 351px;
-        height: 56px;
-        left: 71px;
-        top: 196px;
-        background: #ffffff;
-        border: 1px solid black;
-        font-size: 20px;
-        text-align: center; 
-        transform: translate(-50%, -50%);
-      }
-    
-    }
-    
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer6 h2{
-        display: block;
-        visibility: visible;
-        position: absolute;
-        width: 351px;
-        height: 56px;
-        left: 71px;
-        top: 298px;
-        background: #ffffff;
-        border: 1px solid black;
-        font-size: 20px;
-        text-align: center; 
-        transform: translate(-50%, -50%);
-      }
-    
-    }
-
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer6 h3{
-        display: block;
-        visibility: visible;
-        position: absolute;
-        width: 351px;
-        height: 56px;
-        left: 71px;
-        top: 402px;
-        background: #ffffff;
-        border: 1px solid black;
-        font-size: 20px;
-        text-align: center; 
-        transform: translate(-50%, -50%);
-      }
-    
-    }
-
-
-
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer7 {
-        visibility: hidden;
-        height: 0;
-      }
-    }
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer7 h1{
-        display: block;
-        visibility: visible;
-        position: absolute;
-        width: 351px;
-        height: 56px;
-        left: 72px;
-        top: 400px;
-        background: #1887C7;
-        font-size: 20px;
-        text-align: center; 
-        transform: translate(-50%, -50%);
-      }
-    
-    }
-
-
-
-
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer8 {
-        visibility: hidden;
-        height: 0;
-      }
-    }
-    
-    
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer8 h2{
-        display: block;
-        visibility: visible;
-        position: absolute;
-        width: 351px;
-        height: 56px;
-        left: 71px;
-        top: 397px;
-        background: #ffffff;
-        border: 1px solid black;
-        font-size: 20px;
-        text-align: center; 
-        transform: translate(-50%, -50%);
-      }
-    
-    }
-
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer9 {
-        visibility: hidden;
-        height: 0;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer9 h1{
-        display: block;
-        visibility: visible;
-        position: absolute;
-        width: 351px;
-        height: 56px;
-        left: 71px;
-        top: 395px;
-        background: #ffffff;
-        border: 1px solid black;
-        font-size: 20px;
-        text-align: center; 
-        transform: translate(-50%, -50%);
-      }
-    
-    }
-    
-    
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer9 h2{
-        display: block;
-        visibility: visible;
-        position: absolute;
-        width: 351px;
-        height: 56px;
-        left: 71px;
-        top: 447px;
-        background: #ffffff;
-        border: 1px solid black;
-        font-size: 20px;
-        text-align: center; 
-        transform: translate(-50%, -50%);
-      }
-    
-    }
-
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer10 {
-        visibility: hidden;
-        height: 0;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .WagonRentalDetailsContainer10 h1{
-        display: block;
-        visibility: visible;
-        position: absolute;
-        width: 351px;
-        height: 56px;
-        left: 71px;
-        top: 445px;
-        background: #ffffff;
-        border: 1px solid black;
-        font-size: 20px;
-        text-align: center; 
-        transform: translate(-50%, -50%);
-      }
-    
-    }
-
-
-
-
-
-
-    @media (max-width: 768px) {
-      .WagonPaymentDetailsHeading h1{
-        position: absolute;
-        width: 391px;
-        height: 35px;
-        left: -63px;
-        top: 1600px;
-        font-size: 16px;
-      }
-      .WagonlinePaymentDetailsHeading{
-        position: absolute;
-        width: 142px;
-        height: 0px;
-        left: 261px;
-        top: 1622px;
-    
-      }
-    }
-    
-    @media (max-width: 768px) {
-      .ButtonEditRentalContainerWagon{
-        position: relative;
-        width: 265.1px;
-        height: 58.8px;
-        left: -430px;
-        top: 500.8px;
-      }
-    }
-
-    @media (max-width: 768px) {
-      .ButtonChooseAnotherVehicleContainerWagon{
-        position: relative;
-        width: 265.1px;
-        height: 58.8px;
-        left: -812px;
-        top: 550.8px;
-        
-      }
-    }
-
-
-
-
 
 
 
@@ -7275,118 +5708,16 @@ background: #ffffff;
 }
 
 
-@media (max-width: 991.98px) {
-  #minivan {
-    height: 853px; }
-    #minivan{
-      height: 853px; } }
-
-
-/*--------------------------------------------------------------
-# Minivan Detail Section
---------------------------------------------------------------*/
-.minivandetail h1{
-  position: absolute;
-  width: 113px;
-  height: 44px;
-  left: 38px;
-  top: 137px;
-
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-text-align: center;
-
-color: #000000;
-}
-
-.minivanlinedetail{position: absolute;
-  width: 371.49px;
-  height: 0px;
-  left: 146.51px;
-  top: 163px;
-  
-  border: 1px solid #0BB5FF;
-
-}
-
- .minivan h1{
-  position: absolute;
-  width: 371px;
-  height: 59px;
-  left: 785px;
-  top: 236px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  
-  color: #000000;
+@media (min-width: 1024px) {
+  #hatch {
+    background-attachment: fixed;
   }
-
-
-
-  .minivanreviewsContainer {
-  
-    position: absolute;
-    width: 166px;
-    height: 166px;
-    left: 99px;
-    top: 1394px;
-    background: url(seada.jpeg);
-    background-size: cover; 
-    background-position: center;
-    border-radius: 50%;
- 
-}
-
-
-.minivanReviewsClientContainer {
-  box-sizing: border-box;
-  position: absolute;
-  width: 931px;
-  height: 276px;
-  left: 298px;
-  top: 1400px;
-  background: #FFFFFF;
-  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-}
-
-
-.minivanReviewsClientContainer h1{
-  position: absolute;
-width: 881px;
-height: 248px;
-left: 20px;
-top: 19px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-text-align: justify;
-
-color: #000000;
-
 }
 
 @media (max-width: 768px) {
-  .minivanreviewsContainer{
-    position: absolute;
-    width: 166px;
-    height: 150.77px;
-    left: 111px;
-    top: 2592px;
-    z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
-}
+  #hatch {
+    height: auto;
+  }
 }
 
 
@@ -9195,111 +7526,16 @@ background: #ffffff;
     #suv{
       height: 853px; } }
 
-/*--------------------------------------------------------------
-# SUV Detail Section
---------------------------------------------------------------*/
-.suvdetail h1{
-  position: absolute;
-  width: 113px;
-  height: 44px;
-  left: 38px;
-  top: 137px;
-
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-text-align: center;
-
-color: #000000;
-}
-
-.suvlinedetail{position: absolute;
-  width: 371.49px;
-  height: 0px;
-  left: 116.51px;
-  top: 163px;
-  
-  border: 1px solid #0BB5FF;
-
-}
-
- .suv h1{
-  position: absolute;
-  width: 371px;
-  height: 59px;
-  left: 810px;
-  top: 236px;
-  
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 48px;
-  text-align: center;
-  letter-spacing: 0.05em;
-  
-  color: #000000;
+@media (min-width: 1024px) {
+  #hatch {
+    background-attachment: fixed;
   }
-
-
-
-  .suvreviewsContainer {
-  
-    position: absolute;
-    width: 166px;
-    height: 166px;
-    left: 99px;
-    top: 1394px;
-    background: url(damir.jpeg);
-    background-size: cover; 
-    background-position: center;
-    border-radius: 50%;
- 
-}
-
-
-.suvReviewsClientContainer {
-  box-sizing: border-box;
-  position: absolute;
-  width: 931px;
-  height: 256px;
-  left: 298px;
-  top: 1400px;
-  background: #FFFFFF;
-  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 15px;
-}
-
-
-.suvReviewsClientContainer h1{
-  position: absolute;
-width: 881px;
-height: 248px;
-left: 20px;
-top: 19px;
-
-font-family: 'Poppins';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 30px;
-text-align: justify;
-
-color: #000000;
-
 }
 
 @media (max-width: 768px) {
-  .suvreviewsContainer{
-    position: absolute;
-    width: 166px;
-    height: 150.77px;
-    left: 111px;
-    top: 2592px;
-    z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
-}
+  #hatch {
+    height: auto;
+  }
 }
 
 
@@ -11099,42 +9335,10 @@ background: #ffffff;
 }
 
 
-@media (max-width: 991.98px) {
-  #electric {
-    height: 853px; }
-    #electric{
-      height: 853px; } }
-
-
-
-/*--------------------------------------------------------------
-# SUV Detail Section
---------------------------------------------------------------*/
-.electricdetail h1{
-  position: absolute;
-  width: 113px;
-  height: 44px;
-  left: 68px;
-  top: 137px;
-
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 36px;
-text-align: center;
-
-color: #000000;
-}
-
-.electriclinedetail{position: absolute;
-  width: 371.49px;
-  height: 0px;
-  left: 176.51px;
-  top: 163px;
-  
-  border: 1px solid #0BB5FF;
-
+@media (min-width: 1024px) {
+  #hatch {
+    background-attachment: fixed;
+  }
 }
 
  .electric h1{
@@ -11205,74 +9409,10 @@ color: #000000;
 
 
 @media (max-width: 768px) {
-  .electricreviewsContainer{
-    position: absolute;
-    width: 166px;
-    height: 150.77px;
-    left: 111px;
-    top: 2592px;
-    z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
+  #hatch {
+    height: auto;
+  }
 }
-}
-
-
-@media (max-width: 768px) {
-  .electricreviewsContainerText h1{
-  
-    position: absolute;
-  width: 177px;
-  height: 34.57px;
-  left: 106px;
-  top: 2750.46px;
-  
-  
-  }}
-
-
-  @media (max-width: 768px) {
-      .electricReviewsClientContainer{
-        position: absolute;
-        width: 331.96px;
-        height: 380.63px;
-        left: 28.52px;
-        top: 2832.37px;
-    }
-    }
-    
-    
-    
-    @media (max-width: 768px) {
-      .electricReviewsClientContainer h1{
-        position: absolute;
-        width: 300.96px;
-        height: 655.63px;
-        left: 15px;
-        top: 32.37px;
-        font-size: 16px;
-    }
-    }
-    
-
-    @media (max-width: 768px) {
-      .electricdetail h1 {
-        position: absolute;
-        width: 149px;
-        height: 35px;
-        left: -35px;
-        top: 101px;
-        font-size: 16px;
-      }
-      
-      .electriclinedetail {
-        position: absolute;
-        width: 382.5px;
-        height: 0.53px;
-        left: 75px;
-        top: 122.5px;
-        
-        
-      }
-    }
 
 
 /*--------------------------------------------------------------
@@ -12691,7 +10831,7 @@ flex-grow: 0;
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hyndai.jpeg") center;
+  background: url("../img/backgrounf_picture_web.jpg") center;
   background-size: cover;
   position: relative;
 }
@@ -12722,7 +10862,7 @@ flex-grow: 0;
 }
 
 #hero h1 span {
-  color: #ffc451;
+  color: #1887C7;
 }
 
 #hero h2 {
@@ -12802,31 +10942,31 @@ section {
 }
 
 .section-title h2 {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
   padding: 0;
   line-height: 1px;
   margin: 0 0 5px 0;
   letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #aaaaaa;
+  text-transform: none;
+  color: darkgrey;
   font-family: "Poppins", sans-serif;
 }
 
-.section-title h2::after {
+/*.section-title h2::after {
   content: "";
   width: 120px;
   height: 1px;
   display: inline-block;
   background: #ffde9e;
   margin: 4px 10px;
-}
+}*/
 
 .section-title p {
   margin: 0;
   margin: 0;
-  font-size: 36px;
-  font-weight: 700;
+  font-size: 28px;
+  font-weight: 600;
   text-transform: uppercase;
   font-family: "Poppins", sans-serif;
   color: #151515;
@@ -12864,16 +11004,16 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Clients
+# Partners
 --------------------------------------------------------------*/
 .clients {
   padding-top: 20px;
 }
 
 .clients .swiper-slide img {
-  opacity: 0.5;
-  transition: 0.3s;
-  filter: grayscale(100);
+  
+  transition: 0.5;
+  
 }
 
 .clients .swiper-slide img:hover {
@@ -12895,7 +11035,7 @@ section {
 }
 
 .clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #ffc451;
+  background-color: #1887C7;
 }
 
 /*--------------------------------------------------------------
@@ -13156,7 +11296,7 @@ section {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
-.portfolio-details {
+/*.portfolio-details {
   padding-top: 40px;
 }
 
@@ -13217,11 +11357,11 @@ section {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
-
+*/
 /*--------------------------------------------------------------
 # Counts
 --------------------------------------------------------------*/
-.counts .content {
+/*.counts .content {
   padding: 30px 0;
 }
 
@@ -13298,12 +11438,79 @@ section {
   .counts .image img {
     max-width: 100%;
   }
-}
+}*/
 
 /*--------------------------------------------------------------
 # Testimonials
 --------------------------------------------------------------*/
-.testimonials {
+.testimonial-card {
+  width: 300px;
+  padding: 25px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  border-radius: 10px;
+  background-color: #ffffff;
+}
+
+.testimonial-card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 20px auto; /* Auto margins for centering */
+}
+
+.testimonial-card-name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.testimonial-card-job {
+  font-size: 16px;
+  font-weight: medium;
+  margin-bottom: 15px;
+}
+
+
+.testimonial-card-comment {
+  font-weight: normal;
+  text-align: justify;
+  font-size: 15px;
+  color: #666;
+}
+
+#testimonial-card-container {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.testimonial-card {
+  flex: 0 0 auto;
+  margin-right: 20px;
+  scroll-snap-align: start;
+}
+
+.scroll-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+#scroll-left {
+  left: 5px;
+}
+
+#scroll-right {
+  right: 5px;
+}
+
+
+
+/*.testimonials {
   padding: 80px 0;
   background: url("../img/testimonials-bg.jpg") no-repeat;
   background-position: center center;
@@ -13395,7 +11602,7 @@ section {
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #ffc451;
   opacity: 1;
-}
+}*/
 
 @media (min-width: 1024px) {
   .testimonials {
@@ -13505,7 +11712,7 @@ section {
 
 .contact .info i {
   font-size: 20px;
-  background: #ffc451;
+  background: #0BB5FF;
   color: #151515;
   float: left;
   width: 44px;
@@ -13537,7 +11744,7 @@ section {
   margin-top: 40px;
 }
 
-.contact .php-email-form {
+/*.contact .php-email-form {
   width: 100%;
   background: #fff;
 }
@@ -13619,7 +11826,7 @@ section {
 
 .contact .php-email-form button[type=submit]:hover {
   background: #ffcd6b;
-}
+}*/
 
 @keyframes animate-loading {
   0% {
@@ -13634,7 +11841,7 @@ section {
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
-.breadcrumbs {
+/*.breadcrumbs {
   padding: 15px 0;
   background: whitesmoke;
   min-height: 40px;
@@ -13682,7 +11889,163 @@ section {
   .breadcrumbs ol li {
     display: inline-block;
   }
+}*/
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  background: black;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
 }
+
+#footer .footer-top {
+  background: #151515;
+  border-bottom: 1px solid #222222;
+  padding: 60px 0 30px 0;
+}
+
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-info h3 {
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+#footer .footer-top .footer-info h3 span {
+  color: #ffc451;
+}
+
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
+
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #292929;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #ffc451;
+  color: #151515;
+  text-decoration: none;
+}
+
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  position: relative;
+  padding-bottom: 12px;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #ffc451;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #ffc451;
+}
+
+#footer .footer-top .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+}
+
+#footer .footer-top .footer-newsletter form input[type=email] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+}
+
+#footer .footer-top .footer-newsletter form input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #ffc451;
+  color: #151515;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+}
+
+#footer .footer-top .footer-newsletter form input[type=submit]:hover {
+  background: #ffcd6b;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
+}
+
+
+
 
 
 .container {
@@ -13691,50 +12054,80 @@ section {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
+
   @media (min-width: 576px) {
-    .container {
+    #footer .container {
       max-width: 540px; } }
   @media (min-width: 768px) {
-    .container {
+    #footer .container  {
       max-width: 720px; } }
   @media (min-width: 992px) {
-    .container {
+    #footer .container {
       max-width: 960px; } }
   @media (min-width: 1200px) {
-    .container {
+    #footer .container{
       max-width: 1140px; } }
 
-.container-fluid {
+/*.container-fluid {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }
-
-
-
-  #BookNowLink {
-    position: absolute; /* Enable absolute positioning */
-    top: 10px; /* Position the button 100 pixels from the top of its parent container */
-    left: 20px; /* Position the button 20 pixels from the right of its parent container */
-    /* Add more positioning properties as desired */
-  }
+  margin-left: auto; }*/
 
 
 
 
+  .btn-primary {
+  color: #151515;
+  background-color: #ffc451;
+  border-color: #ffc451; }
+  .btn-primary:hover {
+    color: #343a40;
+    background-color: #ffd584;
+    border-color: #ffd584; }
+  .btn-primary:focus, .btn-primary.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
+  .btn-primary.disabled, .btn-primary:disabled {
+    color: #151515;
+    background-color: #ffc451;
+    border-color: #ffc451; }
+  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle {
+    color: #151515;
+    background-color: #ffd584;
+    border-color: #ffc451; }
+    .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-primary.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
 
 
-    .btn-secondary {
-      position: absolute;
-      width: 150px!important;
-      height: 53px;
-      left: 23px;
-      top: 300px;
-      background: #969399;
-      border-radius: 15px;
-      /* Add more styles as needed */
-    }
+      .btn-secondary {
+  color: #fff;
+  background-color: #6c757d;
+  border-color: #6c757d; }
+  .btn-secondary:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62; }
+  .btn-secondary:focus, .btn-secondary.focus {
+    -webkit-box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+    box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
+  .btn-secondary.disabled, .btn-secondary:disabled {
+    color: #fff;
+    background-color: #6c757d;
+    border-color: #6c757d; }
+  .btn-secondary:not(:disabled):not(.disabled):active, .btn-secondary:not(:disabled):not(.disabled).active,
+  .show > .btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #545b62;
+    border-color: #4e555b; }
+    .btn-secondary:not(:disabled):not(.disabled):active:focus, .btn-secondary:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-secondary.dropdown-toggle:focus {
+      -webkit-box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
+      box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
 
     .btn-secondary {
       position: absolute;
@@ -14641,31 +13034,29 @@ section {
 
     .car-wrap {
   margin-bottom: 40px;
-  background: #fff;
-  height: 400px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-border-radius: 10px;
-}
-.car-wrap .img {
-  width: 100%;
-  height: 212px;
-  position: relative;
+  -webkit-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
+  background: #fff; }
+  .car-wrap .img {
+    width: 100%;
+    height: 220px;
   background-size: cover;
-
-}
+  background-position: center; }
   .car-wrap .text {
     border-top: none;
     padding: 20px 30px 30px; }
     .car-wrap .text .price {
-      color:  #969399;
+      color: #ffc451;
       margin-bottom: 0;
-      font-weight: 400;
-      margin-left: 0; 
-     }
+      font-weight: 600; }
+      .car-wrap .text .price span {
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.3); }
     .car-wrap .text h2 {
       font-size: 20px;
-      font-weight: 500;
-     }
+      font-weight: 500; }
       .car-wrap .text h2 a {
         color: #000000; }
     .car-wrap .text p.d-block {
@@ -14800,8 +13191,6 @@ border-radius: 10px;
         .pills .rating-wrap .star span:last-child {
           width: 32%; }
 
-.car-list {
-  overflow-x: scroll; }
 
 
   .block-27 ul {
