@@ -8,6 +8,110 @@
 (function() {
   "use strict";
 
+
+// main.js
+
+
+//: and time managment in the detail car page
+document.addEventListener('DOMContentLoaded', function () {
+  const timeInput1 = document.getElementById('customTimeInput');
+  const timeInput2 = document.getElementById('customTimeInput2');
+
+  timeInput1.addEventListener('input', function (event) {
+    handleTimeInput(event.target);
+  });
+
+  timeInput2.addEventListener('input', function (event) {
+    handleTimeInput(event.target);
+  });
+
+  function handleTimeInput(input) {
+    const inputValue = input.value.replace(/[^0-9]/g, ''); // Remove non-numeric characters
+    let formattedValue = '';
+
+    if (inputValue.length >= 3) {
+      const hours = inputValue.slice(0, 2);
+      const minutes = inputValue.slice(2, 4);
+
+      formattedValue = `${hours}:${minutes}`;
+
+      // Restrict hours and minutes to valid ranges
+      if (parseInt(hours) > 23) {
+        formattedValue = '23:';
+      }
+
+      if (parseInt(minutes) > 59) {
+        formattedValue = `${hours}:59`;
+      }
+    } else {
+      formattedValue = inputValue;
+    }
+
+    input.value = formattedValue;
+  }
+});
+
+//slash adding automatically in the date input in the detail car page
+document.addEventListener('DOMContentLoaded', function () {
+  const dateInput1 = document.getElementById('customDateInput');
+  const dateInput2 = document.getElementById('customDateInput2');
+
+  dateInput1.addEventListener('input', function (event) {
+    handleDateInput(event.target);
+  });
+
+  dateInput2.addEventListener('input', function (event) {
+    handleDateInput(event.target);
+  });
+
+  function handleDateInput(input) {
+    const inputLength = input.value.length;
+    let inputValue = input.value.replace(/[^0-9]/g, ''); // Remove non-numeric characters
+
+    if (inputLength > 2 && inputLength < 5) {
+      inputValue = `${inputValue.slice(0, 2)}/${inputValue.slice(2)}`;
+    } else if (inputLength >= 5) {
+      inputValue = `${inputValue.slice(0, 2)}/${inputValue.slice(2, 4)}/${inputValue.slice(4, 8)}`;
+    }
+
+    input.value = inputValue;
+  }
+});
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var inputElementCard = document.querySelector('.hatchbackPaymentInfoCardContainer, .WagonPaymentInfoCardContainer, .SedanPaymentInfoCardContainer, .MinivanPaymentInfoCardContainer, .SUVPaymentInfoCardContainer,.ElectricPaymentInfoCardContainer input' );
+
+  inputElementCard.addEventListener('input', function(event) {
+    var inputValue = event.target.value;
+    inputValue = inputValue.replace(/\s/g, ''); // Remove existing spaces
+
+    if (inputValue.length > 0) {
+      inputValue = inputValue.match(/.{1,4}/g).join(' '); // Add spacing every 4 characters
+    }
+
+    event.target.value = inputValue.slice(0, 20); // Limit input to 20 characters
+  });
+
+  var inputElementExpDate = document.querySelector('.hatchbackPaymentExpDateCardContainer, .WagonPaymentExpDateCardContainer, .SedanPaymentExpDateCardContainer, .MinivanPaymentExpDateCardContainer, .SUVPaymentExpDateCardContainer,.ElectricPaymentExpDateCardContainer input');
+
+  inputElementExpDate.addEventListener('input', function(event) {
+    var inputValue = event.target.value;
+
+    // Remove non-digit characters
+    inputValue = inputValue.replace(/\D/g, '');
+
+    // Insert slash after two digits
+    if (inputValue.length > 2) {
+      inputValue = inputValue.replace(/^(\d{2})(\d{2})$/, '$1/$2');
+    }
+
+    event.target.value = inputValue.slice(0, 5); // Limit input to 5 characters
+  });
+});
+
+
+
   /**
    * Easy selector helper function
    */
@@ -291,3 +395,22 @@
   new PureCounter();
 
 })()
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  var mySwiper = new Swiper('.swiper-container', {
+    slidesPerView: 'auto',
+    spaceBetween: 20,
+    grabCursor: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });
+});
