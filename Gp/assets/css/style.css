@@ -299,36 +299,9 @@ border-radius: 10px; }
 
 
 
-/*da ne bude user previse daleko od svega ostalog u meniju*/
-.user-nav-link {
-  margin-left: -15px;
-}
-
-/*ovo je za boju teksta u placeholderu*/
-::placeholder {
-  color: black; /* Change color to your liking */
-  opacity: 1; /* This is necessary to override the default opacity */
-}
-
-/*za centriranje slike*/
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
-/*desna margina gdje zatreba da se doda*/
-
-  .navbar li:nth-last-child(2) {
-    margin-right: 20px;
-  }
-
-
-
-
 body {
   font-family: "Open Sans", sans-serif;
-  color: #444444;
+  color: #ffffff;
 }
 
 a {
@@ -443,6 +416,7 @@ button {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+
   
 }
 
@@ -483,6 +457,7 @@ button {
   padding: 15px 0;
   background-color: #000;
   
+  
 }
 
 #header.header-scrolled,
@@ -511,122 +486,6 @@ button {
 #header2 .logo img {
   max-height: 40px;
 }
-
-/*CSS properties za login*/
-
-#login h3 {
-  color: #1887C7;
-  text-align: left;
-  margin-top: -10px;
-}
-
-.form-label {
-  color: black;
-  font-size: 0.8rem;
-  text-align: left;
-  display: block;
-  margin-bottom: 5px;
-}
-
-.btn {
-  background-color: orange;
-  width: 100%;
-  color: white !important;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 1px; /* Reduced margin on the bottom */
-}
-
-.btn:hover, .btn:focus, .btn:active {
-  background-color: darkorange !important;
-  color: white !important;
-}
-
-.card {
-  background-color: white;
-  color: black;
-  padding: 10px; /* Reduced padding inside the card */
-}
-
-
-.line-separator {
-  border-top: 1px solid grey;
-  margin: 15px 0;
-}
-
-#login.page2 {
-  width: 100%;
-  min-height: 100vh; /* updated from height to min-height */
-  background: url("../img/backgrounf_picture_web.jpg") center;
-  background-size: cover;
-  position: relative;
-}
-
-#login.page1 {
-  width: 100%;
-  height: 100vh; /* updated from height to min-height */
-  background: url("../img/backgrounf_picture_web.jpg") center;
-  background-size: cover;
-  position: relative;
-}
-
-#login:before {
-  content: "";
-  background: rgba(0, 0, 0, 0.6);
-  position: absolute;
-  bottom: 0;
-  top: 0;
-  left: 0;
-  right: 0;
-}
-
-.toggle-password {
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  cursor: pointer;
-  color:#0BB5FF;
-}
-
-
-/*Part koji se odnosi na registration page*/
-
-.account-check {
-  font-size: 0.9rem;
-  color: #1887C7;
-  margin-bottom: 10px; /* add some space between this text and the button */
-}
-
-.account-check a {
-  color: orange;
-  text-decoration: none; /* remove the underline from the link */
-}
-
-.account-check a:hover {
-  text-decoration: underline; /* add the underline back when hovering over the link */
-}
-
-
-.card-body {
-  padding: 20px; /* increase padding inside the card body */
-}
-
-.account-check {
-  font-size: 0.9rem;
-  color: lightblue;
-  margin-bottom: 10px; /* add some space between this text and the button */
-}
-
-.account-check a {
-  color: orange;
-  text-decoration: none; /* remove the underline from the link */
-}
-
-.account-check a:hover {
-  text-decoration: underline; /* add the underline back when hovering over the link */
-}
-
 
 
 /*--------------------------------------------------------------
@@ -994,6 +853,7 @@ button {
   height: 44px;
   left: 48px;
   top: 755px;
+  
 
   font-family: 'Poppins';
 font-style: normal;
@@ -1033,18 +893,26 @@ color: #000000;
   color: #969399;
 }
 
-@media (min-width: 1024px) {
-  #hatch {
-    background-attachment: fixed;
-  }
-}
-
 @media (max-width: 768px) {
-  #hatch {
+  .offers h1,
+  .choose h1 {
+    position: static;
+    width: auto;
     height: auto;
+    left: auto;
+    top: auto;
+    text-align: left; 
+    
+  }
+  .line {
+    position: absolute;
+    width: 300.49px;
+    height: 0px;
+    left: 86.51px;
+    top: 936.5px;
+    border: 1px solid #0BB5FF;
   }
 }
-
 /*--------------------------------------------------------------
 #  Hatchback Detail Title Section
 --------------------------------------------------------------*/
@@ -1063,6 +931,7 @@ line-height: 36px;
 text-align: center;
 
 color: #000000;
+
 }
 
 .hatchbacklinedetail{position: absolute;
@@ -1075,19 +944,32 @@ color: #000000;
 
 }
 
-
-
-@media (min-width: 1024px) {
-  #hatch {
-    background-attachment: fixed;
-  }
-}
-
+/* Responsive Styles */
 @media (max-width: 768px) {
-  #hatch {
-    height: auto;
+  .hatchbackdetail h1 {
+    position: absolute;
+    width: 149px;
+    height: 35px;
+    left: -21px;
+    top: 101px;
+    font-size: 16px;
+  }
+  
+  .hatchbacklinedetail {
+    position: absolute;
+    width: 200.5px;
+    height: 0.53px;
+    left: 101px;
+    top: 122.5px;
+    
+    
   }
 }
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Hatch Section
@@ -1145,19 +1027,6 @@ color: #000000;
   color: #1887C7;
 }
 
-/*#hatch .section-title h1 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #8e1010;
-  text-align: center;
-  z-index: 2;
-}*/
-
-
-
-
 .image-container img{
   position: relative;
   max-width: 100%;
@@ -1175,17 +1044,12 @@ color: #000000;
 }
 
 
-@media (min-width: 1024px) {
+@media (max-width: 991.98px) {
   #hatch {
-    background-attachment: fixed;
-  }
-}
+    height: 853px; }
+    #hatch{
+      height: 853px; } }
 
-@media (max-width: 768px) {
-  #hatch {
-    height: auto;
-  }
-}
 
 /*--------------------------------------------------------------
 # Hatchback Detail  Section
@@ -1203,6 +1067,8 @@ color: #000000;
   background-size: cover;
   border-radius: 15px; 
 }
+
+
 
 
 
@@ -1246,20 +1112,64 @@ color: #000000;
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  #vw7detail .cardetails .img{
+    position: absolute;
+width: 352.88px;
+height: 240px;
+left: 21px;
+top: 228px;
 
+
+  }}
+/* Adjust Layout in Responsive View */
+@media (max-width: 768px) {
+  #vw7detail .vw7name h1{
+    position: absolute;
+    width: 371px;
+    height: 47px;
+    left: 0px;
+    top: 145px;
+    text-align: center;
+    font-size: 24px;
+    
+
+  }
+  #vw7detail .vw7description h1 {
+    position: absolute;
+    width: 327px;
+    height: 232px;
+    left: 20px;
+    top: 498px;
+    text-align: left;
+    font-size: 20px;
+  }
+}
 
 #vw7detail .buttonContinue {
 position: absolute;
 height: 66px;
 width: 166.8131866455078px;
-left: 1145px;
+left: 1070px;
 top: 573px;
 border-radius: 10px;
 background: #FFA500;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
-
-
 }
+@media (max-width: 768px) {
+  #vw7detail .buttonContinue{
+    position: absolute;
+     width: 184px;
+    height: 66px;
+    left: 103px;
+    top: 2427px;
+    
+
+  }
+}
+
+
+
 
 #vw7detail .buttonContinue h1{
  
@@ -1277,6 +1187,16 @@ line-height: 36px;
 letter-spacing: 0.05em;
 
 color: #FFFFFF;
+}
+
+#vw7detail .buttonContinue:hover{
+  background-color: #F09B00;
+  cursor: pointer;
+}
+
+#vw7detail .buttonContinue:active{
+  background-color: #F09B00;
+  cursor: pointer;
 }
 
 
@@ -1310,6 +1230,26 @@ border: 1px solid #1887C7;
 }
 
 
+@media (max-width: 768px) {
+  .hatchbackadditional h1{
+    position: absolute;
+    width: 267px;
+    height: 35px;
+    left: -40px;
+    top: 759px;
+    font-size: 16px;
+  }
+  .hatchbacklineadditonal{
+    position: absolute;
+width: 113px;
+height: 0px;
+left: 178px;
+top: 782px;
+
+  }
+}
+
+
 
 
 #hatchbackAdditionalFeatures  li{
@@ -1339,14 +1279,30 @@ border: 1px solid #1887C7;
   align-items: flex-start;
   padding: 0;
   margin: 0;
-  
-
 }
 
 #hatchbackAdditionalFeatures .list-container {
   margin-bottom: 10px; /* Add margin-bottom for spacing between rows */
 }
+@media (max-width: 768px) {
+  #hatchbackAdditionalFeatures ul {
+    position: absolute;
+    width: 320px;
+    height: 50px;
+    left: 15px;
+    top: 827px;
+    display:grid
+    
+  }
 
+  #hatchbackAdditionalFeatures li {
+    margin-right: 0;
+    margin-bottom: 20px;
+    font-size: 16px;
+    
+    
+  }
+}
 
 
 #hatchbackExtras .hatchbackExtrasHeading h1{
@@ -1377,6 +1333,24 @@ top: 876px;
 
 border: 1px solid #1887C7;
 }
+@media (max-width: 768px) {
+  #hatchbackExtras .hatchbackExtrasHeading h1{
+    position: absolute;
+    width: 141.19px;
+    height: 34.35px;
+    left: -35px;
+    top: 1289px;
+    font-size: 16px;
+  }
+  #hatchbackExtras .hatchbacklineExtrasHeading{
+    position: absolute;
+    width: 227px;
+    height: 0px;
+    left: 64px;
+    top: 1312px;
+
+  }
+}
 
 
 
@@ -1405,6 +1379,18 @@ border: 1px solid #1887C7;
 .hatchbackExtrasListText  {
   font-weight: 400;
   color: #000000;
+}
+
+/* Adjust Layout in Responsive View */
+@media (max-width: 768px) {
+  #hatchbackExtras .hatchbackExtrasList ul {
+    position: absolute;
+    width: 374.45px;
+    height: 122px;
+    left: 27px;
+    top: 1346px;
+    font-size: 15px;
+  }
 }
 
 
@@ -1477,6 +1463,25 @@ top: 875px;
 border: 1px solid #1887C7;
 }
 
+@media (max-width: 768px) {
+  #hatchbackPayment .hatchbackPaymentHeading h1{
+    position: absolute;
+    width: 141.19px;
+    height: 35px;
+    top: 1472px;
+    left: -30px;
+    font-size: 16px;
+  }
+  #hatchbackPayment .hatchbacklinePaymentHeading{
+    position: absolute;
+    width: 212px;
+    height: 0px;
+    left: 79px;
+    top: 1495px;
+
+  }
+}
+
 
 
 #hatchbackPayment .hatchbackPaymentList ul{
@@ -1505,6 +1510,18 @@ border: 1px solid #1887C7;
   color: #969399;
 }
 
+
+/* Adjust Layout in Responsive View */
+@media (max-width: 768px) {
+  #hatchbackPayment .hatchbackPaymentList ul {
+    position: absolute;
+    width: 374.45px;
+    height: 122px;
+    left: 27px;
+    top: 1525px;
+    font-size: 16px;
+  }
+}
 
 
 
@@ -1543,53 +1560,2139 @@ height: 0px;
 left: 665px;
 top: 1061px;
 
+
 border: 1px solid #1887C7;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 1024px) {
-  #vw7detail {
-    background-attachment: fixed;
+@media (max-width: 768px) {
+  .hatchbacLocationHeading h1{
+    position: absolute;
+    width: 385px;
+    height: 35px; 
+    top: 1650px;
+    left:0px;
+    font-size: 15px;
+    
   }
+  .hatchbacklineLocationHeading{
+    position: absolute;
+    width: 2px;
+    height: 0px;
+    left: 370px;
+    top: 1672px;
+
+  }
+}
+
+
+
+#hatchbackLocation .hatchbackLocationContainer {
+  position: absolute;
+  width: 1170px;
+  height: 177px;
+  left: 73px;
+  top: 1081px;
+  background: #1887C7;
+  border-radius: 15px;
+ 
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  
 }
 
 @media (max-width: 768px) {
-  #vw7detail {
-    height: auto;
+  #hatchbackLocation .hatchbackLocationContainer {
+
+    position: absolute;
+    width: 300px;
+    height: 640px;
+    left: 47px;
+    top: 1719px;
+    }}
+
+
+.hatchbackLocationContainer h1{
+
+  position: absolute;
+width: 230.33px;
+height: 36.79px;
+left: 53px;
+top: 30px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+@media (max-width: 768px) {
+  .hatchbackLocationContainer h1 {
+    position: absolute;
+width: 198.83px;
+height: 34.93px;
+left: 60.42px;
+top: 35.87px;
+font-size: 20px;
+
+
+  }}
+
+.hatchbackLocationContainer h2{
+
+  position: absolute;
+width: 204.85px;
+height: 36.79px;
+left: 361px;
+top: 30px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+@media (max-width: 768px) {
+  .hatchbackLocationContainer h2 {
+    position: absolute;
+    width: 154.84px;
+    height: 34.93px;
+    left: 78.42px;
+    top: 164.25px;
+    font-size: 20px;
+
+
+  }}
+
+.hatchbackLocationContainer h3{
+
+position: absolute;
+width: 224.85px;
+height: 36.79px;
+left: 622.71px;
+top: 30px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+@media (max-width: 768px) {
+  .hatchbackLocationContainer h3 {
+    position: absolute;
+    width: 176.83px;
+    height: 34.93px;
+    left: 60.42px;
+    top: 304.9px;
+    font-size: 20px;
+
+
+  }}
+
+
+
+.hatchbackLocationContainer h4{
+
+
+position: absolute;
+width: 168.16px;
+height: 36.79px;
+left: 911px;
+top: 30px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+@media (max-width: 768px) {
+  .hatchbackLocationContainer h4 {
+    position: absolute;
+    width: 145.16px;
+    height: 34.93px;
+    left: 78.42px;
+    top: 440.83px;
+    font-size: 20px;
+  }}
+
+
+
+.hatchbackdropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.hatchbackdropdown-toggle {
+  position: relative;
+  width: 230.33px;
+  height: 53.7px;
+  left: 53px;
+  top: 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hatchbackdropdown-toggle {
+    position: absolute;
+    width: 198.83px;
+    height: 50.97px;
+    left: 51.03px;
+    top: 60.73px;
+    
+  }}
+
+
+.hatchbackdropdown-menu {
+  position: absolute;
+  left: 53px;
+  top: 133px;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+  z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
+}
+
+@media (max-width: 768px) {
+  .hatchbackdropdown-menu{
+    position: absolute;
+    width: 198.83px;
+    left: 51.03px;
+    top: 110.73px;
+    z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
+}
+}
+
+.hatchbackdropdown:hover .hatchbackdropdown-menu {
+  display: block;
+}
+
+/*.hatchbackdropdown.show .hatchbackdropdown-menu {
+  display: block;
+}*/
+
+.hatchbackdropdown-menu li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.hatchbackdropdown-menu li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  padding: 5px;
+}
+
+.hatchbackdropdown-menu li a:hover {
+  background-color: #F2F2F2;
+}
+
+
+
+
+.hatchbackdropdown2 {
+  position: relative;
+  display: inline-block;
+}
+
+.hatchbackdropdown-toggle2 {
+  position: relative;
+  width: 230.33px;
+  height: 53.7px;
+  left: 379px;
+  top: 80px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .hatchbackdropdown-toggle2 {
+    position: absolute;
+    width: 198.83px;
+    height: 50.97px;
+    left: 51.03px;
+    top: 338.73px;
+    
+  }}
+
+.hatchbackdropdown-menu2 {
+  position: absolute;
+  left: 379px;
+  top: 133px;
+  width: 100%;
+  background-color: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  padding: 10px;
+  display: none;
+  z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
+}
+@media (max-width: 768px) {
+  .hatchbackdropdown-menu2{
+    position: absolute;
+    width: 198.83px;
+    left: 51.03px;
+    top: 388.73px;
+    z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
+}
+}
+
+.hatchbackdropdown2:hover .hatchbackdropdown-menu2 {
+  display: block;
+}
+
+/*.hatchbackdropdown.show .hatchbackdropdown-menu {
+  display: block;
+}*/
+
+.hatchbackdropdown-menu2 li {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+.hatchbackdropdown-menu2 li a {
+  display: block;
+  text-decoration: none;
+  color: #000000;
+  padding: 5px;
+}
+
+.hatchbackdropdown-menu2 li a:hover {
+  background-color: #F2F2F2;
+}
+
+
+
+.custom-date-input {
+ position: absolute;
+width: 150.33px;
+height: 53.7px;
+left: 336.32px;
+top: 81.57px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px 0px 0px 10px;
+text-align: center;
+
+font-size: 20px;
+}
+@media (max-width: 768px) {
+  .custom-date-input{
+    position: absolute;
+    width: 150.33px;
+    left: 36.03px;
+    top: 223.73px;
+    z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
+}
+}
+
+.custom-time-input {
+  position: absolute;
+  width: 79.49px;
+  height: 53.7px;
+  left: 485.32px;
+  top: 81.57px;
+  font-size: 20px;
+
+  background: #FFFFFF;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 0px 10px 10px 0px;
+  text-align: center;
+
+}
+@media (max-width: 768px) {
+  .custom-time-input{
+    position: absolute;
+    width: 79.49px;
+    left: 186.03px;
+    top: 223.73px;
+    z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
+}
+}
+
+.custom-date-input2 {
+  position: absolute;
+ width: 150.33px;
+ height: 53.7px;
+ left: 893.32px;
+ top: 81.57px;
+ 
+ background: #FFFFFF;
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ border-radius: 10px 0px 0px 10px;
+ text-align: center;
+ 
+ font-size: 20px;
+ }
+
+ @media (max-width: 768px) {
+  .custom-date-input2{
+    position: absolute;
+    width: 150.33px;
+    left: 36.03px;
+    top: 496.73px;
+    z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
+}
+}
+ 
+ .custom-time-input2 {
+   position: absolute;
+   width: 79.49px;
+   height: 53.7px;
+   left: 1036.32px;
+   top: 81.57px;
+   font-size: 20px;
+  
+ 
+   background: #FFFFFF;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 0px 10px 10px 0px;
+   text-align: center;
+ 
+ }
+ @media (max-width: 768px) {
+  .custom-time-input2{
+    position: absolute;
+    width: 79.49px;
+    left: 186.03px;
+    top: 496.73px;
+    z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
+}
+}
+
+
+
+
+
+
+
+
+.hatchbacReviewsHeading h1{
+  
+
+position: absolute;
+width: 149px;
+height: 35px;
+left: 52px;
+top: 1321px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+text-transform: uppercase;
+
+color: #000000;
+}
+
+.hatchbacklineReviewsHeading{
+  position: absolute;
+width: 371px;
+height: 0px;
+left: 178px;
+top: 1347px;
+
+border: 1px solid #1887C7;
+
+}
+
+@media (max-width: 768px) {
+  .hatchbacReviewsHeading h1{
+    position: absolute;
+    width: 149px;
+    height: 35px;
+    left: -38px;
+    top: 2530px;
+    font-size: 16px;
+  }
+  .hatchbacklineReviewsHeading{
+    position: absolute;
+    width: 221px;
+    height: 0px;
+    left: 72px;
+    top: 2552px;
+
+  }
+}
+
+.hatchbackreviewsContainer {
+  
+    position: absolute;
+    width: 166px;
+    height: 166px;
+    left: 99px;
+    top: 1394px;
+    background: url(amaribegic.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+ 
+}
+
+@media (max-width: 768px) {
+  .hatchbackreviewsContainer{
+    position: absolute;
+    width: 166px;
+    height: 150.77px;
+    left: 111px;
+    top: 2592px;
+    z-index: 999; /* Ensure the dropdown menu appears on top of other elements */
+}
+}
+
+
+
+
+.hatchbackreviewsContainerText h1{
+
+  position: absolute;
+  width: 177px;
+  height: 36px;
+  left: 94px;
+  top: 1565px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  /* identical to box height */
+  
+  text-align: center;
+  
+  color: #000000;
+  
+
+}
+
+@media (max-width: 768px) {
+  .hatchbackreviewsContainerText h1{
+  
+    position: absolute;
+  width: 177px;
+  height: 34.57px;
+  left: 106px;
+  top: 2750.46px;
+  
+  
+  }}
+
+
+.hatchbackReviewsClientContainer {
+  box-sizing: border-box;
+  position: absolute;
+  width: 931px;
+  height: 172px;
+  left: 298px;
+  top: 1400px;
+  background: #FFFFFF;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .hatchbackReviewsClientContainer{
+    position: absolute;
+    width: 331.96px;
+    height: 310.63px;
+    left: 28.52px;
+    top: 2832.37px;
+}
+}
+
+
+
+
+
+
+.hatchbackReviewsClientContainer h1{
+  position: absolute;
+width: 881px;
+height: 248px;
+left: 20px;
+top: 19px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-align: justify;
+
+color: #000000;
+
+}
+
+@media (max-width: 768px) {
+  .hatchbackReviewsClientContainer h1{
+    position: absolute;
+    width: 300.96px;
+    height: 655.63px;
+    left: 15px;
+    top: 32.37px;
+    font-size: 16px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+#  Payment Section
+--------------------------------------------------------------*/
+
+.hatchbackPaymentLogo {
+  position: absolute;
+  top: 29px;
+  left:160.5px;
+  height: 24px;
+  width: 39px;
+  
+
+background: #ffffff;
+
+
+
+}
+
+.hatchbackPaymentLogo img {
+  /* Adjust the image width and height as per your requirements */
+  width: 39px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.hatchbackRentalDetailsHeading h1{
+
+  position: absolute;
+  width: 203px;
+  height: 22px;
+  left: 36px;
+  top: 150px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  
+  color: #000000;
+}
+
+.hatchbacklineRentalDetailsHeading{
+
+  position: absolute;
+width: 276px;
+height: 0px;
+left: 230px;
+top: 176px;
+
+border: 1px solid #1887C7;
+}
+
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsHeading h1{
+    position: absolute;
+    width: 269.7px;
+    height: 47px;
+    left: -68px;
+    top: 98px;
+    font-size: 16px;
+  
+    
+  }
+  .hatchbacklineRentalDetailsHeading{
+    position: absolute;
+    width: 261.5px;
+    height: 0px;
+    left: 128.5px;
+    top: 120px;
+
   }
 }
 
 
+
+
+.hatchbackRentalDetailsContainer1{
+
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 234px;
+
+background: #1887C7;
+border-radius: 10px 10px 0px 0px;
+}
+
+
+.hatchbackRentalDetailsContainer1 h1{
+  position: absolute;
+  width: 283px;
+  height: 42px;
+  left: 95px;
+  top: 11px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.hatchbackRentalDetailsContainer1 h2{
+
+  position: absolute;
+  width: 226px;
+  height: 33px;
+  left: 517px;
+  top: 11px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.hatchbackRentalDetailsContainer2{
+
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 293px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+}
+
+
+.hatchbackRentalDetailsContainer2 h1{
+
+position: absolute;
+width: 222px;
+height: 40px;
+left: 95px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.hatchbackRentalDetailsContainer2 h2{
+
+
+position: absolute;
+width: 222px;
+height: 40px;
+left: 510px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+.hatchbackRentalDetailsContainer3{
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 352px;
+
+background: #1887C7;
+
+
+}
+
+.hatchbackRentalDetailsContainer3 h1{
+  position: absolute;
+width: 203px;
+height: 42px;
+left: 95px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.hatchbackRentalDetailsContainer3 h2{
+
+  position: absolute;
+width: 176px;
+height: 42px;
+left: 532px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.hatchbackRentalDetailsContainer3 h3{
+
+  position: absolute;
+  width: 115px;
+  height: 42px;
+  left: 964px;
+  top: 13px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.hatchbackRentalDetailsContainer4{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 411px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+
+.hatchbackRentalDetailsContainer4 h1{
+  position: absolute;
+width: 222px;
+height: 40px;
+left: 95px;
+top: 10px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+.hatchbackRentalDetailsContainer4 h2{
+
+  position: absolute;
+  width: 242px;
+  height: 40px;
+  left: 510px;
+  top: 10px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #000000;
+}
+
+.hatchbackRentalDetailsContainer4 h3{
+
+
+  position: absolute;
+width: 117px;
+height: 40px;
+left: 964px;
+top: 10px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+}
+
+
+
+.hatchbackRentalDetailsContainer5 {
+
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 470px;
+
+background: #1887C7;
+
+}
+
+
+.hatchbackRentalDetailsContainer5 h1{
+  position: absolute;
+width: 203px;
+height: 42px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.hatchbackRentalDetailsContainer5 h2{
+  position: absolute;
+width: 90px;
+height: 33px;
+left: 576px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.hatchbackRentalDetailsContainer5 h3{
+  position: absolute;
+width: 83px;
+height: 42px;
+left: 964px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.hatchbackRentalDetailsContainer6{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 529px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+.hatchbackRentalDetailsContainer6 h1{
+  position: absolute;
+width: 133px;
+height: 40px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+.hatchbackRentalDetailsContainer6 h2{
+  position: absolute;
+width: 222px;
+height: 40px;
+left: 517px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+  
+}
+
+.hatchbackRentalDetailsContainer6 h3{
+  position: absolute;
+width: 34px;
+height: 40px;
+left: 1000px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+
+
+.hatchbackRentalDetailsContainer7{
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 588px;
+
+background: #1887C7;
+
+}
+
+
+.hatchbackRentalDetailsContainer7 h1{
+  position: absolute;
+width: 111px;
+height: 42px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+ 
+
+}
+
+
+
+
+.hatchbackRentalDetailsContainer8{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 646px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 0px 0px 10px 10px;
+
+}
+
+.hatchbackRentalDetailsContainer8 h1{
+  position: absolute;
+width: 204px;
+height: 34px;
+left: 82px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.hatchbackRentalDetailsContainer8 h2{
+
+  position: absolute;
+width: 130px;
+height: 37px;
+left: 964px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+
+}
+
+
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsContainer1 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsContainer1 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 72px;
+    top: 0px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsContainer1 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 52px;
+    left: 72px;
+    top: 110px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsContainer2 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsContainer2 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: -4px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsContainer2 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 104px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsContainer3 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsContainer3 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 72px;
+    top: 102px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsContainer3 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 52px;
+    left: 72px;
+    top: 208px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsContainer4 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsContainer4 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 98px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .hatchbackRentalDetailsContainer4 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 202px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+
+
+
+    @media (max-width: 768px) {
+      .hatchbackRentalDetailsContainer5 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .hatchbackRentalDetailsContainer5 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 72px;
+        top: 200px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    @media (max-width: 768px) {
+      .hatchbackRentalDetailsContainer5 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 52px;
+        left: 72px;
+        top: 304px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hatchbackRentalDetailsContainer5 h3{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 52px;
+        left: 72px;
+        top: 408px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    }
+    
+    
+
+    @media (max-width: 768px) {
+      .hatchbackRentalDetailsContainer6 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    
+    
+    @media (max-width: 768px) {
+      .hatchbackRentalDetailsContainer6 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 196px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    
+    @media (max-width: 768px) {
+      .hatchbackRentalDetailsContainer6 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 298px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+    @media (max-width: 768px) {
+      .hatchbackRentalDetailsContainer6 h3{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 402px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+    @media (max-width: 768px) {
+      .hatchbackRentalDetailsContainer7 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .hatchbackRentalDetailsContainer7 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 72px;
+        top: 400px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+
+    @media (max-width: 768px) {
+      .hatchbackRentalDetailsContainer8 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    
+    
+    @media (max-width: 768px) {
+      .hatchbackRentalDetailsContainer8 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 397px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+  
+    
+    @media (max-width: 768px) {
+      .ButtonEditRentalContainerHatchback{
+        position: relative;
+        width: 265.1px;
+        height: 58.8px;
+        left: -430px;
+        top: 400.8px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .ButtonChooseAnotherVehicleContainerHatchback{
+        position: relative;
+        width: 265.1px;
+        height: 58.8px;
+        left: -812px;
+        top: 450.8px;
+        
+      }
+    }
+
+
+ 
+
+
+
+
+    #hatcbackEditRentalButton {
+      position: absolute;
+      width: 334px;
+      height: 61px;
+      left: 463px;
+      top: 755px;
+      background: #969399;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+        }
+
+
+
+#hatcbackChooseAnotherVehicleButton {
+ position: absolute;
+width: 334px;
+height: 61px;
+left: 845px;
+top: 755px;
+
+
+background: #969399;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+}
+
+#hatcbackEditRentalButton h1{
+  position: absolute;
+width: 352px;
+height: 39px;
+left: -10px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+#hatcbackChooseAnotherVehicleButton h1{
+
+  position: absolute;
+width: 352px;
+height: 39px;
+left: -7px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+
+#hatcbackEditRentalButton:hover{
+  background: #0BB5FF;
+}
+
+#hatcbackChooseAnotherVehicleButton:hover{
+  background: #0BB5FF;
+}
+
+#hatcbackEditRentalButton:active{
+  background: #1887C7;
+}
+
+#hatcbackChooseAnotherVehicleButton:active{
+  background: #1887C7;
+}
+
+
+
+
+/* Payment Hatchabck Details */
+
+.hatchbackPaymentDetailsHeading h1{
+
+  position: absolute;
+width: 391px;
+height: 35px;
+left: 40px;
+top: 900px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.hatchbacklinePaymentDetailsHeading{
+
+  position: absolute;
+  width: 371.02px;
+  height: 0px;
+  left: 424px;
+  top: 926px;
+  
+  border: 1px solid #1887C7;
+
+}
+
+@media (max-width: 768px) {
+  .hatchbackPaymentDetailsHeading h1{
+    position: absolute;
+    width: 391px;
+    height: 35px;
+    left: -63px;
+    top: 1600px;
+    font-size: 16px;
+  }
+  .hatchbacklinePaymentDetailsHeading{
+    position: absolute;
+    width: 142px;
+    height: 0px;
+    left: 261px;
+    top: 1622px;
+
+  }
+}
+
+
+
+.hatchbackPaymentInfoContainer{
+
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px 30px 30px;
+gap: 24px;
+
+position: absolute;
+width: 360px;
+height: 584px;
+left: 533px;
+top: 989px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 20px rgba(77, 166, 186, 0.38);
+border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .hatchbackPaymentInfoContainer{
+    left: 13px;
+    top: 1700px;
+  }
+  
+}
+
+
+
+.hatchbackPaymentInfoContainer h1{
+  position: absolute;
+  top: 65px;
+  left: 97.5px;
+  width: 165px;
+  height: 36px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #1887C7;
+  
+
+}
+
+.hatchbackPaymentInfoContainer h2{
+position: absolute;
+top: 122px;
+left: 30px;
+width: 79px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.hatchbackPaymentInfoNameContainer {
+  position: absolute;
+  top: 156px;
+  left: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  background: #E2E6EE;
+  border: 1px solid #E2E6EE;
+  box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.hatchbackPaymentInfoNameContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+
+
+.hatchbackPaymentInfoContainer h3{
+position: absolute;
+top: 220px;
+left: 30px;
+width: 162px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+  .hatchbackPaymentInfoCardContainer {
+    position: absolute;
+    top: 254px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 300px;
+    height: 40px;
+    background: #E2E6EE;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .hatchbackPaymentInfoCardContainer input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+
+  .hatchbackPaymentInfoContainer h4{
+    /* Exp Date */
+
+position: absolute;
+top: 318px;
+left: 30px;
+width: 69px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+  }
+
+  .hatchbackPaymentExpDateCardContainer {
+    position: absolute;
+    top: 352px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 144px;
+    height: 40px;
+    background: #E2E6EE;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .hatchbackPaymentExpDateCardContainer input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+
+
+ .hatchbackPaymentInfoContainer h5{
+    /* CVV */
+  
+  position: absolute;
+  top: 318px;
+  left: 186px;
+  width: 34px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+.hatchbackPaymentCVVCardContainer {
+  position: absolute;
+  top: 352px;
+  left: 186px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 144px;
+  height: 40px;
+  background: #E2E6EE;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.hatchbackPaymentCVVCardContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+.hatchbackPaymentInfoContainer h6{
+
+position: absolute;
+top: 416px;
+left: 30px;  
+width: 81px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.hatchbackPaymentZipCodeCardContainer {
+  position: absolute;
+  top: 450px;
+  left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  background: #E2E6EE;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.hatchbackPaymentZipCodeCardContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+.hatchbackPaymentButton {
+  position: absolute;
+  top: 514px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  
+  width: 300px;
+  height: 40px;
+  
+  background: #FFA500;
+  border-radius: 10px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+
+.hatchbackPaymentButton h1{
+
+position: absolute;
+top: 3px;
+left: 54px;
+width: 192px;
+height: 30px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.hatchbackPaymentButton:hover{
+  background: #F09B00;
+}
+
+.hatchbackPaymentButton:active{
+  background: #F09B00;
+}
 
 
 
@@ -1687,16 +3790,1745 @@ border: 1px solid #1887C7;
 
 
 @media (min-width: 1024px) {
-  #sedan {
+  #hatch {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #sedan {
+  #hatch {
     height: auto;
   }
 }
+
+
+@media (max-width: 768px) {
+  .sedanreviewsContainerText h1{
+  
+    position: absolute;
+  width: 177px;
+  height: 34.57px;
+  left: 106px;
+  top: 2750.46px;
+  
+  
+  }}
+
+
+  @media (max-width: 768px) {
+      .sedanReviewsClientContainer{
+        position: absolute;
+        width: 331.96px;
+        height: 410.63px;
+        left: 28.52px;
+        top: 2832.37px;
+    }
+    }
+    
+    
+    
+    @media (max-width: 768px) {
+      .sedanReviewsClientContainer h1{
+        position: absolute;
+        width: 300.96px;
+        height: 655.63px;
+        left: 15px;
+        top: 32.37px;
+        font-size: 16px;
+    }
+    }
+    
+
+    @media (max-width: 768px) {
+      .sedandetail h1 {
+        position: absolute;
+        width: 149px;
+        height: 35px;
+        left: -41px;
+        top: 101px;
+        font-size: 16px;
+      }
+      
+      .sedanlinedetail {
+        position: absolute;
+        width: 382.5px;
+        height: 0.53px;
+        left: 62px;
+        top: 122.5px;
+        
+        
+      }
+    }
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Sedan Payment Detail Section
+--------------------------------------------------------------*/
+
+.SedanRentalDetailsHeading h1{
+
+  position: absolute;
+  width: 203px;
+  height: 22px;
+  left: 36px;
+  top: 150px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  
+  color: #000000;
+}
+
+.SedanlineRentalDetailsHeading{
+
+  position: absolute;
+width: 276px;
+height: 0px;
+left: 230px;
+top: 176px;
+
+border: 1px solid #1887C7;
+}
+
+
+
+
+.SedanRentalDetailsContainer1{
+
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 234px;
+
+background: #1887C7;
+border-radius: 10px 10px 0px 0px;
+}
+
+
+.SedanRentalDetailsContainer1 h1{
+  position: absolute;
+  width: 283px;
+  height: 42px;
+  left: 95px;
+  top: 11px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.SedanRentalDetailsContainer1 h2{
+
+  position: absolute;
+  width: 226px;
+  height: 33px;
+  left: 517px;
+  top: 11px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.SedanRentalDetailsContainer2{
+
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 293px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+}
+
+
+.SedanRentalDetailsContainer2 h1{
+
+position: absolute;
+width: 222px;
+height: 40px;
+left: 95px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.SedanRentalDetailsContainer2 h2{
+
+
+position: absolute;
+width: 222px;
+height: 40px;
+left: 510px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+.SedanRentalDetailsContainer3{
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 352px;
+
+background: #1887C7;
+
+
+}
+
+.SedanRentalDetailsContainer3 h1{
+  position: absolute;
+width: 203px;
+height: 42px;
+left: 95px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.SedanRentalDetailsContainer3 h2{
+
+  position: absolute;
+width: 176px;
+height: 42px;
+left: 532px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.SedanRentalDetailsContainer3 h3{
+
+  position: absolute;
+  width: 115px;
+  height: 42px;
+  left: 964px;
+  top: 13px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.SedanRentalDetailsContainer4{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 411px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+
+.SedanRentalDetailsContainer4 h1{
+  position: absolute;
+width: 222px;
+height: 40px;
+left: 95px;
+top: 10px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+.SedanRentalDetailsContainer4 h2{
+
+  position: absolute;
+  width: 242px;
+  height: 40px;
+  left: 510px;
+  top: 10px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #000000;
+}
+
+.SedanRentalDetailsContainer4 h3{
+
+
+  position: absolute;
+width: 117px;
+height: 40px;
+left: 964px;
+top: 10px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+}
+
+
+
+.SedanRentalDetailsContainer5 {
+
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 470px;
+
+background: #1887C7;
+
+}
+
+
+.SedanRentalDetailsContainer5 h1{
+  position: absolute;
+width: 203px;
+height: 42px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.SedanRentalDetailsContainer5 h2{
+  position: absolute;
+width: 90px;
+height: 33px;
+left: 576px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.SedanRentalDetailsContainer5 h3{
+  position: absolute;
+width: 83px;
+height: 42px;
+left: 964px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.SedanRentalDetailsContainer6{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 529px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+.SedanRentalDetailsContainer6 h1{
+  position: absolute;
+width: 133px;
+height: 40px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+.SedanRentalDetailsContainer6 h2{
+  position: absolute;
+width: 222px;
+height: 40px;
+left: 517px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+  
+}
+
+.SedanRentalDetailsContainer6 h3{
+  position: absolute;
+width: 34px;
+height: 40px;
+left: 1000px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+
+
+.SedanRentalDetailsContainer7{
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 588px;
+
+background: #1887C7;
+
+}
+
+
+.SedanRentalDetailsContainer7 h1{
+  position: absolute;
+width: 111px;
+height: 42px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+ 
+
+}
+
+
+
+
+.SedanRentalDetailsContainer8{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 646px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+
+}
+
+.SedanRentalDetailsContainer8 h1{
+  position: absolute;
+width: 204px;
+height: 34px;
+left: 82px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.SedanRentalDetailsContainer8 h2{
+
+position: absolute;
+width: 130px;
+height: 37px;
+left: 964px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+
+}
+
+
+.SedanRentalDetailsContainer9{
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 704px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+
+.SedanRentalDetailsContainer9 h1{
+  position: absolute;
+  width: 204px;
+  height: 34px;
+  left: 82px;
+  top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.SedanRentalDetailsContainer9 h2{
+  position: absolute;
+  width: 130px;
+  height: 37px;
+  left: 964px;
+  top: 14px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+
+.SedanRentalDetailsContainer10{
+
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 761px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 0px 0px 10px 10px;
+
+}
+
+.SedanRentalDetailsContainer10 h1{
+
+  position: absolute;
+  width: 130px;
+  height: 37px;
+  left: 964px;
+  top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+
+
+
+#SedanEditRentalButton {
+  position: absolute;
+  width: 334px;
+  height: 61px;
+  left: 463px;
+  top: 855px;
+  background: #969399;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+
+
+
+#SedanChooseAnotherVehicleButton {
+position: absolute;
+width: 334px;
+height: 61px;
+left: 845px;
+top: 855px;
+
+
+background: #969399;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+}
+
+#SedanEditRentalButton h1{
+position: absolute;
+width: 352px;
+height: 39px;
+left: -10px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+#SedanChooseAnotherVehicleButton h1{
+
+position: absolute;
+width: 352px;
+height: 39px;
+left: -7px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+
+#SedanEditRentalButton:hover{
+background: #0BB5FF;
+}
+
+#SedanChooseAnotherVehicleButton:hover{
+background: #0BB5FF;
+}
+
+#SedanEditRentalButton:active{
+background: #1887C7;
+}
+
+#SedanChooseAnotherVehicleButton:active{
+background: #1887C7;
+}
+
+
+/*Payment  Sedan Section*/
+
+.SedanPaymentDetailsHeading h1{
+
+  position: absolute;
+width: 391px;
+height: 35px;
+left: 40px;
+top: 960px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.SedanlinePaymentDetailsHeading{
+
+  position: absolute;
+  width: 371.02px;
+  height: 0px;
+  left: 424px;
+  top: 986px;
+  
+  border: 1px solid #1887C7;
+
+}
+
+
+
+.SedanPaymentInfoContainer{
+
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px 30px 30px;
+gap: 24px;
+
+position: absolute;
+width: 360px;
+height: 584px;
+left: 533px;
+top: 1050px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 20px rgba(77, 166, 186, 0.38);
+border-radius: 15px;
+}
+
+
+
+.SedanPaymentInfoContainer h1{
+  position: absolute;
+  top: 65px;
+  left: 97.5px;
+  width: 165px;
+  height: 36px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #1887C7;
+  
+
+}
+
+.SedanPaymentInfoContainer h2{
+position: absolute;
+top: 122px;
+left: 30px;
+width: 79px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.SedanPaymentInfoNameContainer {
+  position: absolute;
+  top: 156px;
+  left: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  background: #E2E6EE;
+  border: 1px solid #E2E6EE;
+  box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.SedanPaymentInfoNameContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+
+
+.SedanPaymentInfoContainer h3{
+position: absolute;
+top: 220px;
+left: 30px;
+width: 162px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+  .SedanPaymentInfoCardContainer {
+    position: absolute;
+    top: 254px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 300px;
+    height: 40px;
+    background: #E2E6EE;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .SedanPaymentInfoCardContainer input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+
+  .SedanPaymentInfoContainer h4{
+    /* Exp Date */
+
+position: absolute;
+top: 318px;
+left: 30px;
+width: 69px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+  }
+
+  .SedanPaymentExpDateCardContainer {
+    position: absolute;
+    top: 352px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 144px;
+    height: 40px;
+    background: #E2E6EE;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .SedanPaymentExpDateCardContainer input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+
+
+ .SedanPaymentInfoContainer h5{
+    /* CVV */
+  
+  position: absolute;
+  top: 318px;
+  left: 186px;
+  width: 34px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+.SedanPaymentCVVCardContainer {
+  position: absolute;
+  top: 352px;
+  left: 186px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 144px;
+  height: 40px;
+  background: #E2E6EE;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.SedanPaymentCVVCardContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+.SedanPaymentInfoContainer h6{
+
+position: absolute;
+top: 416px;
+left: 30px;  
+width: 81px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.SedanPaymentZipCodeCardContainer {
+  position: absolute;
+  top: 450px;
+  left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  background: #E2E6EE;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.SedanPaymentZipCodeCardContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+.SedanPaymentButton {
+  position: absolute;
+  top: 514px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  
+  width: 300px;
+  height: 40px;
+  
+  background: #FFA500;
+  border-radius: 10px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+
+.SedanPaymentButton h1{
+
+position: absolute;
+top: 3px;
+left: 54px;
+width: 192px;
+height: 30px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.SedanPaymentButton:hover{
+  background: #F09B00;
+}
+
+.SedanPaymentButton:active{
+  background: #F09B00;
+}
+
+
+
+.SedanPaymentLogo {
+  position: absolute;
+  top: 29px;
+  left:160.5px;
+  height: 24px;
+  width: 39px;
+  
+
+background: #ffffff;
+
+
+
+}
+
+.SedanPaymentLogo img {
+  /* Adjust the image width and height as per your requirements */
+  width: 39px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+  .SedanPaymentInfoContainer{
+    left: 13px;
+    top: 1700px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .SedanRentalDetailsHeading h1{
+    position: absolute;
+    width: 269.7px;
+    height: 47px;
+    left: -68px;
+    top: 98px;
+    font-size: 16px;
+  
+    
+  }
+  .SedanlineRentalDetailsHeading{
+    position: absolute;
+    width: 261.5px;
+    height: 0px;
+    left: 128.5px;
+    top: 120px;
+
+  }
+}
+
+
+@media (max-width: 768px) {
+  .SedanRentalDetailsContainer1 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+@media (max-width: 768px) {
+  .SedanRentalDetailsContainer1 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 72px;
+    top: 0px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+@media (max-width: 768px) {
+  .SedanRentalDetailsContainer1 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 52px;
+    left: 72px;
+    top: 110px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .SedanRentalDetailsContainer2 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .SedanRentalDetailsContainer2 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: -4px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .SedanRentalDetailsContainer2 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 104px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .SedanRentalDetailsContainer3 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+@media (max-width: 768px) {
+  .SedanRentalDetailsContainer3 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 72px;
+    top: 102px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+@media (max-width: 768px) {
+  .SedanRentalDetailsContainer3 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 52px;
+    left: 72px;
+    top: 208px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .SedanRentalDetailsContainer4 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .SedanRentalDetailsContainer4 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 98px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .SedanRentalDetailsContainer4 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 202px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+
+
+
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer5 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer5 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 72px;
+        top: 200px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer5 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 52px;
+        left: 72px;
+        top: 304px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer5 h3{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 52px;
+        left: 72px;
+        top: 408px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    }
+    
+    
+
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer6 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    
+    
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer6 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 196px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer6 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 298px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer6 h3{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 402px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer7 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer7 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 72px;
+        top: 400px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer8 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    
+    
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer8 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 397px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer9 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer9 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 395px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    
+    
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer9 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 447px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer10 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .SedanRentalDetailsContainer10 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 445px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+
+
+
+    @media (max-width: 768px) {
+      .SedanPaymentDetailsHeading h1{
+        position: absolute;
+        width: 391px;
+        height: 35px;
+        left: -63px;
+        top: 1600px;
+        font-size: 16px;
+      }
+      .SedanlinePaymentDetailsHeading{
+        position: absolute;
+        width: 142px;
+        height: 0px;
+        left: 261px;
+        top: 1622px;
+    
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .ButtonEditRentalContainerSedan{
+        position: relative;
+        width: 265.1px;
+        height: 58.8px;
+        left: -430px;
+        top: 500.8px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .ButtonChooseAnotherVehicleContainerSedan{
+        position: relative;
+        width: 265.1px;
+        height: 58.8px;
+        left: -812px;
+        top: 550.8px;
+        
+      }
+    }
+
+
+ 
+
+
+
+
+
+
 
 /*--------------------------------------------------------------
 # Wagon Section
@@ -1780,26 +5612,17 @@ border: 1px solid #1887C7;
 
 
 @media (min-width: 1024px) {
-  #wagon {
+  #hatch {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #wagon {
+  #hatch {
     height: auto;
   }
 }
 
-/* For titles*/
-.section-title p::after {
-  content: "";
-  width: 120px;
-  height: 2px;
-  display: inline-block;
-  background:#0BB5FF;
-  margin: 4px 10px;
-}
 
 
 /*--------------------------------------------------------------
@@ -1886,16 +5709,1732 @@ border: 1px solid #1887C7;
 
 
 @media (min-width: 1024px) {
-  #minivan {
+  #hatch {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #minivan {
+  #hatch {
     height: auto;
   }
 }
+
+
+@media (max-width: 768px) {
+  .minivanreviewsContainerText h1{
+  
+    position: absolute;
+  width: 177px;
+  height: 34.57px;
+  left: 106px;
+  top: 2750.46px;
+  
+  
+  }}
+
+
+  @media (max-width: 768px) {
+      .minivanReviewsClientContainer{
+        position: absolute;
+        width: 331.96px;
+        height: 670.63px;
+        left: 28.52px;
+        top: 2832.37px;
+    }
+    }
+    
+    
+    
+    @media (max-width: 768px) {
+      .minivanReviewsClientContainer h1{
+        position: absolute;
+        width: 300.96px;
+        height: 655.63px;
+        left: 15px;
+        top: 32.37px;
+        font-size: 16px;
+    }
+    }
+    
+
+    @media (max-width: 768px) {
+      .minivandetail h1 {
+        position: absolute;
+        width: 149px;
+        height: 35px;
+        left: -41px;
+        top: 101px;
+        font-size: 16px;
+      }
+      
+      .minivanlinedetail {
+        position: absolute;
+        width: 382.5px;
+        height: 0.53px;
+        left: 69px;
+        top: 122.5px;
+        
+        
+      }
+    }
+
+
+/*--------------------------------------------------------------
+# Minivan Payment Detail Section
+--------------------------------------------------------------*/
+
+.MinivanRentalDetailsHeading h1{
+
+  position: absolute;
+  width: 203px;
+  height: 22px;
+  left: 36px;
+  top: 150px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  
+  color: #000000;
+}
+
+.MinivanlineRentalDetailsHeading{
+
+  position: absolute;
+width: 276px;
+height: 0px;
+left: 230px;
+top: 176px;
+
+border: 1px solid #1887C7;
+}
+
+
+
+
+.MinivanRentalDetailsContainer1{
+
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 234px;
+
+background: #1887C7;
+border-radius: 10px 10px 0px 0px;
+}
+
+
+.MinivanRentalDetailsContainer1 h1{
+  position: absolute;
+  width: 283px;
+  height: 42px;
+  left: 95px;
+  top: 11px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.MinivanRentalDetailsContainer1 h2{
+
+  position: absolute;
+  width: 226px;
+  height: 33px;
+  left: 517px;
+  top: 11px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.MinivanRentalDetailsContainer2{
+
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 293px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+}
+
+
+.MinivanRentalDetailsContainer2 h1{
+
+position: absolute;
+width: 222px;
+height: 40px;
+left: 95px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.MinivanRentalDetailsContainer2 h2{
+
+
+position: absolute;
+width: 222px;
+height: 40px;
+left: 510px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+.MinivanRentalDetailsContainer3{
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 352px;
+
+background: #1887C7;
+
+
+}
+
+.MinivanRentalDetailsContainer3 h1{
+  position: absolute;
+width: 203px;
+height: 42px;
+left: 95px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.MinivanRentalDetailsContainer3 h2{
+
+  position: absolute;
+width: 176px;
+height: 42px;
+left: 532px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.MinivanRentalDetailsContainer3 h3{
+
+  position: absolute;
+  width: 115px;
+  height: 42px;
+  left: 964px;
+  top: 13px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.MinivanRentalDetailsContainer4{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 411px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+
+.MinivanRentalDetailsContainer4 h1{
+  position: absolute;
+width: 222px;
+height: 40px;
+left: 95px;
+top: 10px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+.MinivanRentalDetailsContainer4 h2{
+
+  position: absolute;
+  width: 242px;
+  height: 40px;
+  left: 510px;
+  top: 10px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #000000;
+}
+
+.MinivanRentalDetailsContainer4 h3{
+
+
+  position: absolute;
+width: 117px;
+height: 40px;
+left: 964px;
+top: 10px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+}
+
+
+
+.MinivanRentalDetailsContainer5 {
+
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 470px;
+
+background: #1887C7;
+
+}
+
+
+.MinivanRentalDetailsContainer5 h1{
+  position: absolute;
+width: 203px;
+height: 42px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.MinivanRentalDetailsContainer5 h2{
+  position: absolute;
+width: 90px;
+height: 33px;
+left: 576px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.MinivanRentalDetailsContainer5 h3{
+  position: absolute;
+width: 83px;
+height: 42px;
+left: 964px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.MinivanRentalDetailsContainer6{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 529px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+.MinivanRentalDetailsContainer6 h1{
+  position: absolute;
+width: 133px;
+height: 40px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+.MinivanRentalDetailsContainer6 h2{
+  position: absolute;
+width: 222px;
+height: 40px;
+left: 517px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+  
+}
+
+.MinivanRentalDetailsContainer6 h3{
+  position: absolute;
+width: 34px;
+height: 40px;
+left: 1000px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+
+
+.MinivanRentalDetailsContainer7{
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 588px;
+
+background: #1887C7;
+
+}
+
+
+.MinivanRentalDetailsContainer7 h1{
+  position: absolute;
+width: 111px;
+height: 42px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+ 
+
+}
+
+
+
+
+.MinivanRentalDetailsContainer8{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 646px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+
+}
+
+.MinivanRentalDetailsContainer8 h1{
+  position: absolute;
+width: 204px;
+height: 34px;
+left: 82px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.MinivanRentalDetailsContainer8 h2{
+
+position: absolute;
+width: 130px;
+height: 37px;
+left: 964px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+
+}
+
+
+.MinivanRentalDetailsContainer9{
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 704px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+
+.MinivanRentalDetailsContainer9 h1{
+  position: absolute;
+  width: 204px;
+  height: 34px;
+  left: 82px;
+  top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.MinivanRentalDetailsContainer9 h2{
+  position: absolute;
+  width: 130px;
+  height: 37px;
+  left: 964px;
+  top: 14px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+
+.MinivanRentalDetailsContainer10{
+
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 761px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 0px 0px 10px 10px;
+}
+
+.MinivanRentalDetailsContainer10 h1{
+
+  position: absolute;
+  width: 130px;
+  height: 37px;
+  left: 964px;
+  top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+
+
+
+#MinivanEditRentalButton {
+  position: absolute;
+  width: 334px;
+  height: 61px;
+  left: 463px;
+  top: 855px;
+  background: #969399;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+
+
+
+#MinivanChooseAnotherVehicleButton {
+position: absolute;
+width: 334px;
+height: 61px;
+left: 845px;
+top: 855px;
+
+
+background: #969399;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+}
+
+#MinivanEditRentalButton h1{
+position: absolute;
+width: 352px;
+height: 39px;
+left: -10px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+#MinivanChooseAnotherVehicleButton h1{
+
+position: absolute;
+width: 352px;
+height: 39px;
+left: -7px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+
+#MinivanEditRentalButton:hover{
+background: #0BB5FF;
+}
+
+#MinivanChooseAnotherVehicleButton:hover{
+background: #0BB5FF;
+}
+
+#MinivanEditRentalButton:active{
+background: #1887C7;
+}
+
+#MinivanChooseAnotherVehicleButton:active{
+background: #1887C7;
+}
+
+
+/*Payment  Minivan Section*/
+
+.MinivanPaymentDetailsHeading h1{
+
+  position: absolute;
+width: 391px;
+height: 35px;
+left: 40px;
+top: 960px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.MinivanlinePaymentDetailsHeading{
+
+  position: absolute;
+  width: 371.02px;
+  height: 0px;
+  left: 424px;
+  top: 986px;
+  
+  border: 1px solid #1887C7;
+
+}
+
+
+
+.MinivanPaymentInfoContainer{
+
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px 30px 30px;
+gap: 24px;
+
+position: absolute;
+width: 360px;
+height: 584px;
+left: 533px;
+top: 1050px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 20px rgba(77, 166, 186, 0.38);
+border-radius: 15px;
+}
+
+
+
+.MinivanPaymentInfoContainer h1{
+  position: absolute;
+  top: 65px;
+  left: 97.5px;
+  width: 165px;
+  height: 36px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #1887C7;
+  
+
+}
+
+.MinivanPaymentInfoContainer h2{
+position: absolute;
+top: 122px;
+left: 30px;
+width: 79px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.MinivanPaymentInfoNameContainer {
+  position: absolute;
+  top: 156px;
+  left: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  background: #E2E6EE;
+  border: 1px solid #E2E6EE;
+  box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.MinivanPaymentInfoNameContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+
+
+.MinivanPaymentInfoContainer h3{
+position: absolute;
+top: 220px;
+left: 30px;
+width: 162px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+  .MinivanPaymentInfoCardContainer {
+    position: absolute;
+    top: 254px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 300px;
+    height: 40px;
+    background: #E2E6EE;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .MinivanPaymentInfoCardContainer input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+
+  .MinivanPaymentInfoContainer h4{
+    /* Exp Date */
+
+position: absolute;
+top: 318px;
+left: 30px;
+width: 69px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+  }
+
+  .MinivanPaymentExpDateCardContainer {
+    position: absolute;
+    top: 352px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 144px;
+    height: 40px;
+    background: #E2E6EE;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .MinivanPaymentExpDateCardContainer input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+
+
+ .MinivanPaymentInfoContainer h5{
+    /* CVV */
+  
+  position: absolute;
+  top: 318px;
+  left: 186px;
+  width: 34px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+.MinivanPaymentCVVCardContainer {
+  position: absolute;
+  top: 352px;
+  left: 186px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 144px;
+  height: 40px;
+  background: #E2E6EE;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.MinivanPaymentCVVCardContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+.MinivanPaymentInfoContainer h6{
+
+position: absolute;
+top: 416px;
+left: 30px;  
+width: 81px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.MinivanPaymentZipCodeCardContainer {
+  position: absolute;
+  top: 450px;
+  left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  background: #E2E6EE;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.MinivanPaymentZipCodeCardContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+.MinivanPaymentButton {
+  position: absolute;
+  top: 514px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  
+  width: 300px;
+  height: 40px;
+  
+  background: #FFA500;
+  border-radius: 10px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+
+.MinivanPaymentButton h1{
+
+position: absolute;
+top: 3px;
+left: 54px;
+width: 192px;
+height: 30px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.MinivanPaymentButton:hover{
+  background: #F09B00;
+}
+
+.MinivanPaymentButton:active{
+  background: #F09B00;
+}
+
+
+
+.MinivanPaymentLogo {
+  position: absolute;
+  top: 29px;
+  left:160.5px;
+  height: 24px;
+  width: 39px;
+  
+
+background: #ffffff;
+
+
+
+}
+
+.MinivanPaymentLogo img {
+  /* Adjust the image width and height as per your requirements */
+  width: 39px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+  .MinivanPaymentInfoContainer{
+    left: 13px;
+    top: 1700px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .MinivanRentalDetailsHeading h1{
+    position: absolute;
+    width: 269.7px;
+    height: 47px;
+    left: -68px;
+    top: 98px;
+    font-size: 16px;
+  
+    
+  }
+  .MinivanlineRentalDetailsHeading{
+    position: absolute;
+    width: 261.5px;
+    height: 0px;
+    left: 128.5px;
+    top: 120px;
+
+  }
+}
+
+
+@media (max-width: 768px) {
+  .MinivanRentalDetailsContainer1 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+@media (max-width: 768px) {
+  .MinivanRentalDetailsContainer1 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 72px;
+    top: 0px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+@media (max-width: 768px) {
+  .MinivanRentalDetailsContainer1 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 52px;
+    left: 72px;
+    top: 110px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .MinivanRentalDetailsContainer2 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .MinivanRentalDetailsContainer2 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: -4px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .MinivanRentalDetailsContainer2 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 104px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .MinivanRentalDetailsContainer3 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+@media (max-width: 768px) {
+  .MinivanRentalDetailsContainer3 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 72px;
+    top: 102px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+@media (max-width: 768px) {
+  .MinivanRentalDetailsContainer3 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 52px;
+    left: 72px;
+    top: 208px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .MinivanRentalDetailsContainer4 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .MinivanRentalDetailsContainer4 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 98px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .MinivanRentalDetailsContainer4 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 202px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+
+
+
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer5 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer5 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 72px;
+        top: 200px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer5 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 52px;
+        left: 72px;
+        top: 304px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer5 h3{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 52px;
+        left: 72px;
+        top: 408px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    }
+    
+    
+
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer6 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    
+    
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer6 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 196px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer6 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 298px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer6 h3{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 402px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer7 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer7 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 72px;
+        top: 400px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer8 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    
+    
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer8 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 397px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer9 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer9 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 395px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    
+    
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer9 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 447px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer10 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .MinivanRentalDetailsContainer10 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 445px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+
+
+
+    @media (max-width: 768px) {
+      .MinivanPaymentDetailsHeading h1{
+        position: absolute;
+        width: 391px;
+        height: 35px;
+        left: -63px;
+        top: 1600px;
+        font-size: 16px;
+      }
+      .MinivanlinePaymentDetailsHeading{
+        position: absolute;
+        width: 142px;
+        height: 0px;
+        left: 261px;
+        top: 1622px;
+    
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .ButtonEditRentalContainerMinivan{
+        position: relative;
+        width: 265.1px;
+        height: 58.8px;
+        left: -430px;
+        top: 500.8px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .ButtonChooseAnotherVehicleContainerMinivan{
+        position: relative;
+        width: 265.1px;
+        height: 58.8px;
+        left: -812px;
+        top: 550.8px;
+        
+      }
+    }
+
+
 
 /*--------------------------------------------------------------
 # SUV Section
@@ -1981,18 +7520,1736 @@ border: 1px solid #1887C7;
   z-index: 2;
 }
 
+@media (max-width: 991.98px) {
+  #suv {
+    height: 853px; }
+    #suv{
+      height: 853px; } }
 
 @media (min-width: 1024px) {
-  #suv {
+  #hatch {
     background-attachment: fixed;
   }
 }
 
 @media (max-width: 768px) {
-  #suv {
+  #hatch {
     height: auto;
   }
 }
+
+
+@media (max-width: 768px) {
+  .suvreviewsContainerText h1{
+  
+    position: absolute;
+  width: 177px;
+  height: 34.57px;
+  left: 106px;
+  top: 2750.46px;
+  
+  
+  }}
+
+
+  @media (max-width: 768px) {
+      .suvReviewsClientContainer{
+        position: absolute;
+        width: 331.96px;
+        height: 610.63px;
+        left: 28.52px;
+        top: 2832.37px;
+    }
+    }
+    
+    
+    
+    @media (max-width: 768px) {
+      .suvReviewsClientContainer h1{
+        position: absolute;
+        width: 300.96px;
+        height: 655.63px;
+        left: 15px;
+        top: 32.37px;
+        font-size: 16px;
+    }
+    }
+    
+
+    @media (max-width: 768px) {
+      .suvdetail h1 {
+        position: absolute;
+        width: 149px;
+        height: 35px;
+        left: -55px;
+        top: 101px;
+        font-size: 16px;
+      }
+      
+      .suvlinedetail {
+        position: absolute;
+        width: 382.5px;
+        height: 0.53px;
+        left: 32px;
+        top: 122.5px;
+        
+        
+      }
+    }
+
+/*--------------------------------------------------------------
+# SUV Payment Detail Section
+--------------------------------------------------------------*/
+
+
+.SUVRentalDetailsHeading h1{
+
+  position: absolute;
+  width: 203px;
+  height: 22px;
+  left: 36px;
+  top: 150px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  
+  color: #000000;
+}
+
+.SUVlineRentalDetailsHeading{
+
+  position: absolute;
+width: 276px;
+height: 0px;
+left: 230px;
+top: 176px;
+
+border: 1px solid #1887C7;
+}
+
+
+
+
+.SUVRentalDetailsContainer1{
+
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 234px;
+
+background: #1887C7;
+border-radius: 10px 10px 0px 0px;
+}
+
+
+.SUVRentalDetailsContainer1 h1{
+  position: absolute;
+  width: 283px;
+  height: 42px;
+  left: 95px;
+  top: 11px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.SUVRentalDetailsContainer1 h2{
+
+  position: absolute;
+  width: 226px;
+  height: 33px;
+  left: 517px;
+  top: 11px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.SUVRentalDetailsContainer2{
+
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 293px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+}
+
+
+.SUVRentalDetailsContainer2 h1{
+
+position: absolute;
+width: 222px;
+height: 40px;
+left: 95px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.SUVRentalDetailsContainer2 h2{
+
+
+position: absolute;
+width: 222px;
+height: 40px;
+left: 510px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+.SUVRentalDetailsContainer3{
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 352px;
+
+background: #1887C7;
+
+
+}
+
+.SUVRentalDetailsContainer3 h1{
+  position: absolute;
+width: 203px;
+height: 42px;
+left: 95px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.SUVRentalDetailsContainer3 h2{
+
+  position: absolute;
+width: 176px;
+height: 42px;
+left: 532px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.SUVRentalDetailsContainer3 h3{
+
+  position: absolute;
+  width: 115px;
+  height: 42px;
+  left: 964px;
+  top: 13px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.SUVRentalDetailsContainer4{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 411px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+
+.SUVRentalDetailsContainer4 h1{
+  position: absolute;
+width: 222px;
+height: 40px;
+left: 95px;
+top: 10px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+.SUVRentalDetailsContainer4 h2{
+
+  position: absolute;
+  width: 242px;
+  height: 40px;
+  left: 510px;
+  top: 10px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #000000;
+}
+
+.SUVRentalDetailsContainer4 h3{
+
+
+  position: absolute;
+width: 117px;
+height: 40px;
+left: 964px;
+top: 10px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+}
+
+
+
+.SUVRentalDetailsContainer5 {
+
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 470px;
+
+background: #1887C7;
+
+}
+
+
+.SUVRentalDetailsContainer5 h1{
+  position: absolute;
+width: 203px;
+height: 42px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.SUVRentalDetailsContainer5 h2{
+  position: absolute;
+width: 90px;
+height: 33px;
+left: 576px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.SUVRentalDetailsContainer5 h3{
+  position: absolute;
+width: 83px;
+height: 42px;
+left: 964px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.SUVRentalDetailsContainer6{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 529px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+.SUVRentalDetailsContainer6 h1{
+  position: absolute;
+width: 133px;
+height: 40px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+.SUVRentalDetailsContainer6 h2{
+  position: absolute;
+width: 222px;
+height: 40px;
+left: 517px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+  
+}
+
+.SUVRentalDetailsContainer6 h3{
+  position: absolute;
+width: 34px;
+height: 40px;
+left: 1000px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+
+
+.SUVRentalDetailsContainer7{
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 588px;
+
+background: #1887C7;
+
+}
+
+
+.SUVRentalDetailsContainer7 h1{
+  position: absolute;
+width: 111px;
+height: 42px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+ 
+
+}
+
+
+
+
+.SUVRentalDetailsContainer8{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 646px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+
+}
+
+.SUVRentalDetailsContainer8 h1{
+  position: absolute;
+width: 204px;
+height: 34px;
+left: 82px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.SUVRentalDetailsContainer8 h2{
+
+position: absolute;
+width: 130px;
+height: 37px;
+left: 964px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+
+}
+
+
+.SUVRentalDetailsContainer9{
+
+
+box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 704px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+
+.SUVRentalDetailsContainer9 h1{
+  position: absolute;
+  width: 204px;
+  height: 34px;
+  left: 82px;
+  top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.SUVRentalDetailsContainer9 h2{
+  position: absolute;
+  width: 130px;
+  height: 37px;
+  left: 964px;
+  top: 14px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+
+.SUVRentalDetailsContainer10{
+
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 761px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+}
+
+.SUVRentalDetailsContainer10 h1{
+
+  position: absolute;
+  width: 130px;
+  height: 37px;
+  left: 964px;
+  top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+
+
+
+#SUVEditRentalButton {
+  position: absolute;
+  width: 334px;
+  height: 61px;
+  left: 463px;
+  top: 855px;
+  background: #969399;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+    }
+
+
+
+#SUVChooseAnotherVehicleButton {
+position: absolute;
+width: 334px;
+height: 61px;
+left: 845px;
+top: 855px;
+
+
+background: #969399;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 10px;
+
+
+}
+
+#SUVEditRentalButton h1{
+position: absolute;
+width: 352px;
+height: 39px;
+left: -10px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+
+}
+
+#SUVChooseAnotherVehicleButton h1{
+
+position: absolute;
+width: 352px;
+height: 39px;
+left: -7px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+
+
+#SUVEditRentalButton:hover{
+background: #0BB5FF;
+}
+
+#SUVChooseAnotherVehicleButton:hover{
+background: #0BB5FF;
+}
+
+#SUVEditRentalButton:active{
+background: #1887C7;
+}
+
+#SUVChooseAnotherVehicleButton:active{
+background: #1887C7;
+}
+
+/*Payment  SUV Section*/
+
+.SUVPaymentDetailsHeading h1{
+
+  position: absolute;
+width: 391px;
+height: 35px;
+left: 40px;
+top: 960px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.SUVlinePaymentDetailsHeading{
+
+  position: absolute;
+  width: 371.02px;
+  height: 0px;
+  left: 424px;
+  top: 986px;
+  
+  border: 1px solid #1887C7;
+
+}
+
+
+
+.SUVPaymentInfoContainer{
+
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px 30px 30px;
+gap: 24px;
+
+position: absolute;
+width: 360px;
+height: 584px;
+left: 533px;
+top: 1050px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 20px rgba(77, 166, 186, 0.38);
+border-radius: 15px;
+}
+
+
+
+.SUVPaymentInfoContainer h1{
+  position: absolute;
+  top: 65px;
+  left: 97.5px;
+  width: 165px;
+  height: 36px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #1887C7;
+  
+
+}
+
+.SUVPaymentInfoContainer h2{
+position: absolute;
+top: 122px;
+left: 30px;
+width: 79px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.SUVPaymentInfoNameContainer {
+  position: absolute;
+  top: 156px;
+  left: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  background: #E2E6EE;
+  border: 1px solid #E2E6EE;
+  box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.SUVPaymentInfoNameContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+
+
+.SUVPaymentInfoContainer h3{
+position: absolute;
+top: 220px;
+left: 30px;
+width: 162px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+  .SUVPaymentInfoCardContainer {
+    position: absolute;
+    top: 254px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 300px;
+    height: 40px;
+    background: #E2E6EE;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .SUVPaymentInfoCardContainer input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+
+  .SUVPaymentInfoContainer h4{
+    /* Exp Date */
+
+position: absolute;
+top: 318px;
+left: 30px;
+width: 69px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+  }
+
+  .SUVPaymentExpDateCardContainer {
+    position: absolute;
+    top: 352px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 144px;
+    height: 40px;
+    background: #E2E6EE;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .SUVPaymentExpDateCardContainer input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+
+
+ .SUVPaymentInfoContainer h5{
+    /* CVV */
+  
+  position: absolute;
+  top: 318px;
+  left: 186px;
+  width: 34px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+.SUVPaymentCVVCardContainer {
+  position: absolute;
+  top: 352px;
+  left: 186px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 144px;
+  height: 40px;
+  background: #E2E6EE;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.SUVPaymentCVVCardContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+.SUVPaymentInfoContainer h6{
+
+position: absolute;
+top: 416px;
+left: 30px;  
+width: 81px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.SUVPaymentZipCodeCardContainer {
+  position: absolute;
+  top: 450px;
+  left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  background: #E2E6EE;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.SUVPaymentZipCodeCardContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+.SUVPaymentButton {
+  position: absolute;
+  top: 514px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  
+  width: 300px;
+  height: 40px;
+  
+  background: #FFA500;
+  border-radius: 10px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+
+.SUVPaymentButton h1{
+
+position: absolute;
+top: 3px;
+left: 54px;
+width: 192px;
+height: 30px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.SUVPaymentButton:hover{
+  background: #F09B00;
+}
+
+.SUVPaymentButton:active{
+  background: #F09B00;
+}
+
+
+
+.SUVPaymentLogo {
+  position: absolute;
+  top: 29px;
+  left:160.5px;
+  height: 24px;
+  width: 39px;
+  
+
+background: #ffffff;
+
+
+
+}
+
+.SUVPaymentLogo img {
+  /* Adjust the image width and height as per your requirements */
+  width: 39px;
+  height: 24px;
+  object-fit: contain;
+}
+
+
+
+@media (max-width: 768px) {
+  .SUVPaymentInfoContainer{
+    left: 13px;
+    top: 1700px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+  .SUVRentalDetailsHeading h1{
+    position: absolute;
+    width: 269.7px;
+    height: 47px;
+    left: -68px;
+    top: 98px;
+    font-size: 16px;
+  
+    
+  }
+  .SUVlineRentalDetailsHeading{
+    position: absolute;
+    width: 261.5px;
+    height: 0px;
+    left: 128.5px;
+    top: 120px;
+
+  }
+}
+
+
+@media (max-width: 768px) {
+  .SUVRentalDetailsContainer1 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+@media (max-width: 768px) {
+  .SUVRentalDetailsContainer1 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 72px;
+    top: 0px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+@media (max-width: 768px) {
+  .SUVRentalDetailsContainer1 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 52px;
+    left: 72px;
+    top: 110px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .SUVRentalDetailsContainer2 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .SUVRentalDetailsContainer2 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: -4px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .SUVRentalDetailsContainer2 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 104px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .SUVRentalDetailsContainer3 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+@media (max-width: 768px) {
+  .SUVRentalDetailsContainer3 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 72px;
+    top: 102px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+@media (max-width: 768px) {
+  .SUVRentalDetailsContainer3 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 52px;
+    left: 72px;
+    top: 208px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .SUVRentalDetailsContainer4 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .SUVRentalDetailsContainer4 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 98px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .SUVRentalDetailsContainer4 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 202px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+
+
+
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer5 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer5 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 72px;
+        top: 200px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer5 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 52px;
+        left: 72px;
+        top: 304px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer5 h3{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 52px;
+        left: 72px;
+        top: 408px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    }
+    
+    
+
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer6 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    
+    
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer6 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 196px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer6 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 298px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer6 h3{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 402px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer7 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer7 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 72px;
+        top: 400px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer8 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    
+    
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer8 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 397px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer9 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer9 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 395px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    
+    
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer9 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 447px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer10 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .SUVRentalDetailsContainer10 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 445px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+
+
+
+    @media (max-width: 768px) {
+      .SUVPaymentDetailsHeading h1{
+        position: absolute;
+        width: 391px;
+        height: 35px;
+        left: -63px;
+        top: 1600px;
+        font-size: 16px;
+      }
+      .SUVlinePaymentDetailsHeading{
+        position: absolute;
+        width: 142px;
+        height: 0px;
+        left: 261px;
+        top: 1622px;
+    
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .ButtonEditRentalContainerSUV{
+        position: relative;
+        width: 265.1px;
+        height: 58.8px;
+        left: -430px;
+        top: 500.8px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .ButtonChooseAnotherVehicleContainerSUV{
+        position: relative;
+        width: 265.1px;
+        height: 58.8px;
+        left: -812px;
+        top: 550.8px;
+        
+      }
+    }
 
 
 /*--------------------------------------------------------------
@@ -2079,17 +9336,1494 @@ border: 1px solid #1887C7;
 
 
 @media (min-width: 1024px) {
-  #electric {
+  #hatch {
     background-attachment: fixed;
   }
 }
 
+ .electric h1{
+  position: absolute;
+  width: 381px;
+  height: 59px;
+  left: 810px;
+  top: 236px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  
+  color: #000000;
+  }
+
+
+
+  .electricreviewsContainer {
+  
+    position: absolute;
+    width: 166px;
+    height: 166px;
+    left: 99px;
+    top: 1394px;
+    background: url(seada.jpeg);
+    background-size: cover; 
+    background-position: center;
+    border-radius: 50%;
+ 
+}
+
+
+.electricReviewsClientContainer {
+  box-sizing: border-box;
+  position: absolute;
+  width: 931px;
+  height: 166px;
+  left: 298px;
+  top: 1400px;
+  background: #FFFFFF;
+  box-shadow: 0px -4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+}
+
+
+.electricReviewsClientContainer h1{
+  position: absolute;
+width: 881px;
+height: 248px;
+left: 20px;
+top: 19px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 30px;
+text-align: justify;
+
+color: #000000;
+
+}
+
+
 @media (max-width: 768px) {
-  #electric {
+  #hatch {
     height: auto;
   }
 }
 
+
+/*--------------------------------------------------------------
+#  Electric Payment Section
+--------------------------------------------------------------*/
+
+.ElectricPaymentLogo {
+  position: absolute;
+  top: 29px;
+  left:160.5px;
+  height: 24px;
+  width: 39px;
+  
+
+background: #ffffff;
+
+
+
+}
+
+.ElectricPaymentLogo img {
+  /* Adjust the image width and height as per your requirements */
+  width: 39px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.ElectricRentalDetailsHeading h1{
+
+  position: absolute;
+  width: 203px;
+  height: 22px;
+  left: 36px;
+  top: 150px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  
+  color: #000000;
+}
+
+.ElectriclineRentalDetailsHeading{
+
+  position: absolute;
+width: 276px;
+height: 0px;
+left: 230px;
+top: 176px;
+
+border: 1px solid #1887C7;
+}
+
+
+
+
+.ElectricRentalDetailsContainer1{
+
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 234px;
+
+background: #1887C7;
+border-radius: 10px 10px 0px 0px;
+}
+
+
+.ElectricRentalDetailsContainer1 h1{
+  position: absolute;
+  width: 283px;
+  height: 42px;
+  left: 95px;
+  top: 11px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.ElectricRentalDetailsContainer1 h2{
+
+  position: absolute;
+  width: 226px;
+  height: 33px;
+  left: 517px;
+  top: 11px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+
+.ElectricRentalDetailsContainer2{
+
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 293px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+}
+
+
+.ElectricRentalDetailsContainer2 h1{
+
+position: absolute;
+width: 222px;
+height: 40px;
+left: 95px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.ElectricRentalDetailsContainer2 h2{
+
+
+position: absolute;
+width: 222px;
+height: 40px;
+left: 510px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+.ElectricRentalDetailsContainer3{
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 352px;
+
+background: #1887C7;
+
+
+}
+
+.ElectricRentalDetailsContainer3 h1{
+  position: absolute;
+width: 203px;
+height: 42px;
+left: 95px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.ElectricRentalDetailsContainer3 h2{
+
+  position: absolute;
+width: 176px;
+height: 42px;
+left: 532px;
+top: 13px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.ElectricRentalDetailsContainer3 h3{
+
+  position: absolute;
+  width: 115px;
+  height: 42px;
+  left: 964px;
+  top: 13px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #FFFFFF;
+  
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.ElectricRentalDetailsContainer4{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 411px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+
+.ElectricRentalDetailsContainer4 h1{
+  position: absolute;
+width: 222px;
+height: 40px;
+left: 95px;
+top: 10px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+
+.ElectricRentalDetailsContainer4 h2{
+
+  position: absolute;
+  width: 242px;
+  height: 40px;
+  left: 510px;
+  top: 10px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 0.05em;
+  
+  color: #000000;
+}
+
+.ElectricRentalDetailsContainer4 h3{
+
+
+  position: absolute;
+width: 117px;
+height: 40px;
+left: 964px;
+top: 10px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+}
+
+
+
+.ElectricRentalDetailsContainer5 {
+
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 470px;
+
+background: #1887C7;
+
+}
+
+
+.ElectricRentalDetailsContainer5 h1{
+  position: absolute;
+width: 203px;
+height: 42px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.ElectricRentalDetailsContainer5 h2{
+  position: absolute;
+width: 90px;
+height: 33px;
+left: 576px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.ElectricRentalDetailsContainer5 h3{
+  position: absolute;
+width: 83px;
+height: 42px;
+left: 964px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+
+.ElectricRentalDetailsContainer6{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 529px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+
+}
+
+.ElectricRentalDetailsContainer6 h1{
+  position: absolute;
+width: 133px;
+height: 40px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+.ElectricRentalDetailsContainer6 h2{
+  position: absolute;
+width: 222px;
+height: 40px;
+left: 517px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+  
+}
+
+.ElectricRentalDetailsContainer6 h3{
+  position: absolute;
+width: 34px;
+height: 40px;
+left: 1000px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+  
+}
+
+
+
+.ElectricRentalDetailsContainer7{
+  position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 588px;
+
+background: #1887C7;
+
+}
+
+
+.ElectricRentalDetailsContainer7 h1{
+  position: absolute;
+width: 111px;
+height: 42px;
+left: 95px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #FFFFFF;
+ 
+
+}
+
+
+
+
+.ElectricRentalDetailsContainer8{
+  box-sizing: border-box;
+
+position: absolute;
+width: 1139px;
+height: 59px;
+left: 123px;
+top: 646px;
+
+background: #FFFFFF;
+border: 1px solid #000000;
+border-radius: 0px 0px 10px 10px;
+
+}
+
+.ElectricRentalDetailsContainer8 h1{
+  position: absolute;
+width: 204px;
+height: 34px;
+left: 82px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.ElectricRentalDetailsContainer8 h2{
+
+  position: absolute;
+width: 130px;
+height: 37px;
+left: 964px;
+top: 14px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 36px;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+
+}
+
+
+
+
+
+
+
+/* Payment Hatchabck Details */
+
+.ElectricPaymentDetailsHeading h1{
+
+  position: absolute;
+width: 391px;
+height: 35px;
+left: 40px;
+top: 900px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 36px;
+text-align: center;
+letter-spacing: 0.05em;
+
+color: #000000;
+
+}
+
+.ElectriclinePaymentDetailsHeading{
+
+  position: absolute;
+  width: 371.02px;
+  height: 0px;
+  left: 424px;
+  top: 926px;
+  
+  border: 1px solid #1887C7;
+
+}
+
+
+
+.ElectricPaymentInfoContainer{
+
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 16px 30px 30px;
+gap: 24px;
+
+position: absolute;
+width: 360px;
+height: 584px;
+left: 533px;
+top: 989px;
+
+background: #FFFFFF;
+box-shadow: 0px 4px 20px rgba(77, 166, 186, 0.38);
+border-radius: 15px;
+}
+
+
+
+.ElectricPaymentInfoContainer h1{
+  position: absolute;
+  top: 65px;
+  left: 97.5px;
+  width: 165px;
+  height: 36px;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 36px;
+
+  color: #1887C7;
+  
+
+}
+
+.ElectricPaymentInfoContainer h2{
+position: absolute;
+top: 122px;
+left: 30px;
+width: 79px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+.ElectricPaymentInfoNameContainer {
+  position: absolute;
+  top: 156px;
+  left: 30px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  background: #E2E6EE;
+  border: 1px solid #E2E6EE;
+  box-shadow: 0px 4px 18px rgba(158, 168, 189, 0.31);
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.ElectricPaymentInfoNameContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+
+
+.ElectricPaymentInfoContainer h3{
+position: absolute;
+top: 220px;
+left: 30px;
+width: 162px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+color: #000000;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+
+  .ElectricPaymentInfoCardContainer {
+    position: absolute;
+    top: 254px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 300px;
+    height: 40px;
+    background: #E2E6EE;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .ElectricPaymentInfoCardContainer input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+
+  .ElectricPaymentInfoContainer h4{
+    /* Exp Date */
+
+position: absolute;
+top: 318px;
+left: 30px;
+width: 69px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+  }
+
+  .ElectricPaymentExpDateCardContainer {
+    position: absolute;
+    top: 352px;
+    left: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 12px;
+    gap: 10px;
+    width: 144px;
+    height: 40px;
+    background: #E2E6EE;
+    border-radius: 10px;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+  }
+
+  .ElectricPaymentExpDateCardContainer input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    outline: none;
+  }
+
+
+
+ .ElectricPaymentInfoContainer h5{
+    /* CVV */
+  
+  position: absolute;
+  top: 318px;
+  left: 186px;
+  width: 34px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+
+}
+
+
+.ElectricPaymentCVVCardContainer {
+  position: absolute;
+  top: 352px;
+  left: 186px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 144px;
+  height: 40px;
+  background: #E2E6EE;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.ElectricPaymentCVVCardContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+.ElectricPaymentInfoContainer h6{
+
+position: absolute;
+top: 416px;
+left: 30px;  
+width: 81px;
+height: 24px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* identical to box height */
+
+
+/* Black */
+
+color: #030102;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.ElectricPaymentZipCodeCardContainer {
+  position: absolute;
+  top: 450px;
+  left: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 10px;
+  width: 300px;
+  height: 40px;
+  background: #E2E6EE;
+  border-radius: 10px;
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.ElectricPaymentZipCodeCardContainer input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+
+.ElectricPaymentButton {
+  position: absolute;
+  top: 514px;
+  left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 24px;
+  gap: 10px;
+  
+  width: 300px;
+  height: 40px;
+  
+  background: #FFA500;
+  border-radius: 10px;
+  
+  /* Inside auto layout */
+  
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+
+.ElectricPaymentButton h1{
+
+position: absolute;
+top: 3px;
+left: 54px;
+width: 192px;
+height: 30px;
+
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+
+text-transform: uppercase;
+
+color: #FFFFFF;
+
+text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
+
+.ElectricPaymentButton:hover{
+  background: #F09B00;
+}
+
+.ElectricPaymentButton:active{
+  background: #F09B00;
+}
+
+@media (max-width: 768px) {
+  .ElectricPaymentInfoContainer{
+    left: 13px;
+    top: 1700px;
+  }
+  
+}
+
+
+@media (max-width: 768px) {
+  .ElectricRentalDetailsHeading h1{
+    position: absolute;
+    width: 269.7px;
+    height: 47px;
+    left: -68px;
+    top: 98px;
+    font-size: 16px;
+  
+    
+  }
+  .ElectriclineRentalDetailsHeading{
+    position: absolute;
+    width: 261.5px;
+    height: 0px;
+    left: 128.5px;
+    top: 120px;
+
+  }
+}
+
+
+@media (max-width: 768px) {
+  .ElectricRentalDetailsContainer1 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+@media (max-width: 768px) {
+  .ElectricRentalDetailsContainer1 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 72px;
+    top: 0px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+@media (max-width: 768px) {
+  .ElectricRentalDetailsContainer1 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 52px;
+    left: 72px;
+    top: 110px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .ElectricRentalDetailsContainer2 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .ElectricRentalDetailsContainer2 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: -4px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .ElectricRentalDetailsContainer2 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 104px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .ElectricRentalDetailsContainer3 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+@media (max-width: 768px) {
+  .ElectricRentalDetailsContainer3 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 72px;
+    top: 102px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+@media (max-width: 768px) {
+  .ElectricRentalDetailsContainer3 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 52px;
+    left: 72px;
+    top: 208px;
+    background: #1887C7;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+@media (max-width: 768px) {
+  .ElectricRentalDetailsContainer4 {
+    visibility: hidden;
+    height: 0;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .ElectricRentalDetailsContainer4 h1{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 98px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+@media (max-width: 768px) {
+  .ElectricRentalDetailsContainer4 h2{
+    display: block;
+    visibility: visible;
+    position: absolute;
+    width: 351px;
+    height: 56px;
+    left: 71px;
+    top: 202px;
+    background: #ffffff;
+    border: 1px solid black;
+    font-size: 20px;
+    text-align: center; 
+    transform: translate(-50%, -50%);
+  }
+
+}
+
+
+
+
+
+    @media (max-width: 768px) {
+      .ElectricRentalDetailsContainer5 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .ElectricRentalDetailsContainer5 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 72px;
+        top: 200px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    @media (max-width: 768px) {
+      .ElectricRentalDetailsContainer5 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 52px;
+        left: 72px;
+        top: 304px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .ElectricRentalDetailsContainer5 h3{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 52px;
+        left: 72px;
+        top: 408px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    }
+    
+    
+
+    @media (max-width: 768px) {
+      .ElectricRentalDetailsContainer6 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    
+    
+    @media (max-width: 768px) {
+      .ElectricRentalDetailsContainer6 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 196px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+    
+    @media (max-width: 768px) {
+      .ElectricRentalDetailsContainer6 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 298px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+    @media (max-width: 768px) {
+      .ElectricRentalDetailsContainer6 h3{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 402px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+    @media (max-width: 768px) {
+      .ElectricRentalDetailsContainer7 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    @media (max-width: 768px) {
+      .ElectricRentalDetailsContainer7 h1{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 72px;
+        top: 400px;
+        background: #1887C7;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+
+
+
+    @media (max-width: 768px) {
+      .ElectricRentalDetailsContainer8 {
+        visibility: hidden;
+        height: 0;
+      }
+    }
+    
+    
+    @media (max-width: 768px) {
+      .ElectricRentalDetailsContainer8 h2{
+        display: block;
+        visibility: visible;
+        position: absolute;
+        width: 351px;
+        height: 56px;
+        left: 71px;
+        top: 397px;
+        background: #ffffff;
+        border: 1px solid black;
+        font-size: 20px;
+        text-align: center; 
+        transform: translate(-50%, -50%);
+      }
+    
+    }
+
+   
+
+
+
+
+
+
+
+    @media (max-width: 768px) {
+      .ElectricPaymentDetailsHeading h1{
+        position: absolute;
+        width: 391px;
+        height: 35px;
+        left: -63px;
+        top: 1600px;
+        font-size: 16px;
+      }
+      .ElectriclinePaymentDetailsHeading{
+        position: absolute;
+        width: 142px;
+        height: 0px;
+        left: 261px;
+        top: 1622px;
+    
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .ButtonEditRentalContainerElectric{
+        position: relative;
+        width: 265.1px;
+        height: 58.8px;
+        left: -430px;
+        top: 500.8px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .ButtonChooseAnotherVehicleContainerElectric{
+        position: relative;
+        width: 265.1px;
+        height: 58.8px;
+        left: -812px;
+        top: 550.8px;
+        
+      }
+    }
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -3160,167 +11894,166 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-
-.contentheight  {
-  min-height: calc(55vh - 40px);
-}
-
-
 #footer {
-  background: #222222;
-  display: flex;
-  justify-content: center;
-  align-items: center;;
+  background: black;
+  padding: 0 0 30px 0;
+  color: #fff;
+  font-size: 14px;
+}
+
+#footer .footer-top {
+  background: #151515;
   border-bottom: 1px solid #222222;
-  padding: 30px 0 30px 0;
-  margin-top: auto;
+  padding: 60px 0 30px 0;
 }
 
-
-#footer .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#footer .footer-top .footer-info {
+  margin-bottom: 30px;
 }
 
-/*#footer .container > * {
-  margin-right: 10px;
+#footer .footer-top .footer-info h3 {
+  font-size: 28px;
+  margin: 0 0 20px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+  text-transform: uppercase;
 }
-*/
-#footer .btn-nav {
-  margin-left: 10px;
+
+#footer .footer-top .footer-info h3 span {
+  color: #ffc451;
 }
 
-.footer {
-  background-color:#222222;
-  font-size: 15px;
-  font-weight: 600;
-  }
+#footer .footer-top .footer-info p {
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 0;
+  font-family: "Raleway", sans-serif;
+  color: #fff;
+}
 
-
-
-
-#footer .buttonNoDropUp {
-  background-color: transparent; 
-  border: none;
-  color: white;
-  padding: 15px 32px;
+#footer .footer-top .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #292929;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 4px;
   text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .footer-top .social-links a:hover {
+  background: #ffc451;
+  color: #151515;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 4px 2px;
-  cursor: pointer;
-} 
-
-#footer .buttonNoDropUp:hover, .buttonNoDropUp:active {
-
-  color: #1887C7;
-
-} 
-
-#footer .dropbtn {
-  background-color: transparent;
-  font-weight: 600;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  font-weight: 500;
-  border: none;
 }
 
-
-#footer .dropup {
+#footer .footer-top h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
   position: relative;
-  display: inline-block;
+  padding-bottom: 12px;
 }
 
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
 
-#footer .dropup-content {
-  display: none;
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #ffc451;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #fff;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  color: #ffc451;
+}
+
+#footer .footer-top .footer-newsletter form {
+  margin-top: 30px;
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+}
+
+#footer .footer-top .footer-newsletter form input[type=email] {
+  border: 0;
+  padding: 4px;
+  width: calc(100% - 110px);
+}
+
+#footer .footer-top .footer-newsletter form input[type=submit] {
   position: absolute;
-  bottom: 50px;
-  background-color: black;
-  min-width: 160px;
-  z-index: 1;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px;
+  background: #ffc451;
+  color: #151515;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+}
+
+#footer .footer-top .footer-newsletter form input[type=submit]:hover {
+  background: #ffcd6b;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}
+
+#footer .credits {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 13px;
+  color: #fff;
 }
 
 
 
-#footer .dropup-content a {
-  color: white;
-  padding: 12px 16px;
-  text-align: left;
-  text-decoration: none;
-  display: block;
-}
 
 
-
-#footer .dropup-content a:hover, a:active, a:focus {color: #1887C7}
-
-#footer .dropup:hover .dropup-content {
-  display: block;
-}
-
-#footer.dropup:hover .dropbtn {
-  color:#1887c7;
-}
-
-#footer .dropbtn {
-  background-color:transparent;
-  color: white;
-  font-size: 15px;
-  font-weight: 600;
-}
-
-#footer .dropbtn:hover  {
-
-  color: black;
-  
-}
-
-
-/*#footer .dropup {
-  position: relative;
-  display: inline-block;
-}*/
-
-/*#footer .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-top: auto;
-}*/
-
-#footer .container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-#footer .container > * {
-  margin-bottom: 10px;
-}
-
-#footer .buttonNoDropUp,
-#footer .dropbtn {
-  flex: 1;
-  max-width: 200px;
-}
-
-
-/*.container {
+.container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
-  margin-left: auto; }*/
+  margin-left: auto; }
 
   @media (min-width: 576px) {
     #footer .container {
@@ -3343,19 +12076,16 @@ section {
   margin-left: auto; }*/
 
 
-/*--------------------------------------------------------------
-# Buttons
---------------------------------------------------------------*/
+
+
   .btn-primary {
   color: #151515;
-  background-color: #FFA500;
-  border-color: #FFA500; }
-
+  background-color: #ffc451;
+  border-color: #ffc451; }
   .btn-primary:hover {
-    color: #151515;
-    background-color: #F09B00;
-    border-color: #F09B00; }
-
+    color: #343a40;
+    background-color: #ffd584;
+    border-color: #ffd584; }
   .btn-primary:focus, .btn-primary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5); }
@@ -3378,16 +12108,13 @@ section {
   color: #fff;
   background-color: #6c757d;
   border-color: #6c757d; }
-
   .btn-secondary:hover {
     color: #fff;
     background-color: #5a6268;
     border-color: #545b62; }
-
   .btn-secondary:focus, .btn-secondary.focus {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
     box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
-
   .btn-secondary.disabled, .btn-secondary:disabled {
     color: #fff;
     background-color: #6c757d;
@@ -3401,6 +12128,60 @@ section {
     .show > .btn-secondary.dropdown-toggle:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5);
       box-shadow: 0 0 0 0.2rem rgba(130, 138, 145, 0.5); }
+
+    .btn-secondary {
+      position: absolute;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 36px;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      /* Add more styles as needed */
+    }
+
+    .BookNowButton {
+      position: absolute;
+      width: 150px!important;
+      height: 53px;
+      left: 193px;
+      top: 300px;
+      background: #FFA500;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 15px;
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 36px;
+      letter-spacing: 0.05em;
+      color: #FFFFFF;
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      /* Add more styles as needed */
+    }
+    
+    .BookNowButton:hover {
+      background: #F09B00;
+    }
+    
+    .ButtonText {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+    }
+    
+    .ButtonText:hover {
+      color: #FFFFFF;
+    }
+    
+    
+    
+     
+
+   
 
 
 
@@ -4251,10 +13032,48 @@ section {
 
 
 
+    .car-wrap {
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
+  -moz-box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 5px 12px -1px rgba(0, 0, 0, 0.06);
+  background: #fff; }
+  .car-wrap .img {
+    width: 100%;
+    height: 220px;
+  background-size: cover;
+  background-position: center; }
+  .car-wrap .text {
+    border-top: none;
+    padding: 20px 30px 30px; }
+    .car-wrap .text .price {
+      color: #ffc451;
+      margin-bottom: 0;
+      font-weight: 600; }
+      .car-wrap .text .price span {
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(0, 0, 0, 0.3); }
+    .car-wrap .text h2 {
+      font-size: 20px;
+      font-weight: 500; }
+      .car-wrap .text h2 a {
+        color: #000000; }
+    .car-wrap .text p.d-block {
+      width: 100%; }
+      .car-wrap .text p.d-block a {
+        width: 50%; }
+
+  
+
+
+
+
+
 
 
 .ftco-car-details .services .media-body .icon span {
-  color: #ffc451; }
+  color: #ffffff; }
 
 .ftco-car-details .services .media-body .text h3 {
   font-size: 14px !important;
@@ -4385,12 +13204,334 @@ section {
         color: #ffc451;
         text-align: center;
         display: inline-block;
-        width: 40px;
-        height: 40px;
+        width: 15px;
+        height: 15px;
         line-height: 40px;
         border-radius: 50%;
         border: 1px solid #e6e6e6; }
       .block-27 ul li.active a, .block-27 ul li.active span {
-        background: #ffc451;
+        background: #0BB5FF;
         color: #000;
         border: 1px solid transparent; }
+
+
+
+
+
+        .card-wrap {
+          position: relative;
+          overflow: hidden;
+        }
+        .swiper-button-next,
+        .swiper-button-prev {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        cursor: pointer;
+         z-index: 10;
+         outline: none;
+          border: none;
+        }
+
+      .swiper-button-next {
+        right: 8px;
+        background: none;
+        }
+
+      .swiper-button-prev {
+        left: 8px;
+         background: none;
+        }
+        .swiper-slide {
+          display: flex;
+          justify-content: space-between;
+
+        }
+        .swiper-slide .car-wrap {
+          width: 100%;
+        }
+        .swiper-slide .col-md-4 {
+          flex-basis: 33.33%;
+          max-width: 33.33%;
+          padding: 0 10px;
+        }
+        .swiper-pagination-bullet {
+          width: 12px;
+          height: 12px;
+          background-color: #ddd;
+          border-radius: 50%;
+          display: inline-block;
+          margin: 0 5px;
+          cursor: pointer;
+        }
+        .swiper-pagination-bullet-active {
+          background-color: #0BB5FF;
+        }
+        .swiper-button-next::before {
+          right: -100%;
+        }
+        
+        .swiper-button-prev::before {
+          left: -100%;
+        }
+
+        .swiper-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+        }
+        .swiper-slide {
+          flex: 0 0 100%; /* Display each card with full width */
+        }
+     
+
+
+
+        /* CSS for Web View */
+.swiper-slide {
+  display: flex;
+}
+
+.swiper-slide .col-md-4 {
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+/* CSS for Mobile View */
+@media (max-width: 767px) {
+  .swiper-slide {
+    display: block;
+  }
+  
+  .swiper-slide .col-md-4 {
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+
+.contentheight  {
+  min-height: calc(55vh - 40px);
+}
+
+
+.contentheight2 {
+  min-height: 600px;
+}
+
+.contentheight3 {
+  min-height: 1000px;
+}
+
+.contentheight4 {
+  min-height: 1000px;
+}
+
+.contentheight5 {
+  min-height: 1030px;
+}
+
+.contentheight6 {
+  min-height: 970px;
+}
+
+.contentheight7 {
+  min-height: 1000px;
+}
+
+.contentheight8 {
+  min-height: 1800px;
+}
+
+
+
+
+#footer {
+  background: #222222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #222222;
+  padding: 30px 0 30px 0;
+  margin-top: auto;
+
+  
+}
+
+
+#footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*#footer .container > * {
+  margin-right: 10px;
+}
+*/
+#footer .btn-nav {
+  margin-left: 10px;
+}
+
+.footer {
+  background-color:#222222;
+  font-size: 15px;
+  font-weight: 600;
+  }
+
+
+
+
+#footer .buttonNoDropUp {
+  background-color: transparent; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 4px 2px;
+  cursor: pointer;
+} 
+
+#footer .buttonNoDropUp:hover, .buttonNoDropUp:active {
+
+  color: #1887C7;
+
+} 
+
+#footer .dropbtn {
+  background-color: transparent;
+  font-weight: 600;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+}
+
+
+#footer .dropup {
+  position: relative;
+  display: inline-block;
+}
+
+
+#footer .dropup-content {
+  display: none;
+  position: absolute;
+  bottom: 50px;
+  background-color: black;
+  min-width: 160px;
+  z-index: 1;
+}
+
+
+
+#footer .dropup-content a {
+  color: white;
+  padding: 12px 16px;
+  text-align: left;
+  text-decoration: none;
+  display: block;
+}
+
+
+
+#footer .dropup-content a:hover, a:active, a:focus {color: #1887C7}
+
+#footer .dropup:hover .dropup-content {
+  display: block;
+}
+
+#footer.dropup:hover .dropbtn {
+  color:#1887c7;
+}
+
+#footer .dropbtn {
+  background-color:transparent;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#footer .dropbtn:hover  {
+
+  color: black;
+  
+}
+
+
+/*#footer .dropup {
+  position: relative;
+  display: inline-block;
+}*/
+
+/*#footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: auto;
+}*/
+
+#footer .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#footer .container > * {
+  margin-bottom: 10px;
+}
+
+#footer .buttonNoDropUp,
+#footer .dropbtn {
+  flex: 1;
+  max-width: 200px;
+}
+
+
+/*.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }*/
+
+  @media (min-width: 576px) {
+    #footer .container {
+      max-width: 540px; } }
+  @media (min-width: 768px) {
+    #footer .container  {
+      max-width: 720px; } }
+  @media (min-width: 992px) {
+    #footer .container {
+      max-width: 960px; } }
+  @media (min-width: 1200px) {
+    #footer .container{
+      max-width: 1140px; } }
+
+/*.container-fluid {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }*/

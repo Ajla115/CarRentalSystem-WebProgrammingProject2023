@@ -29,14 +29,28 @@
    <!-- Template Main CSS File -->
    <link href="assets/css/style.css" rel="stylesheet">
 
- </head>
- 
- <body>
-  <header id="header" class="fixed-top">
+  
+
+  <!-- =======================================================
+  * Template Name: Gp
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-lg-between">
 
-    <h1 class="logo me-auto me-lg-0";><a href="index.html">DRIVENATION<span>.</span></a></h1>
-     <nav id="navbar" class="navbar order-last order-lg-0">
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">DRIVENATION<span>.</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li><a class="nav-link scrollto" href="#hero">Home</a></li>
           <li class="dropdown">
@@ -66,7 +80,8 @@
               <li><a href="#">Deutsch</a></li>
             </ul>
           </li>
-          <li class="user-nav-link"><a class="nav-link scrollto" href="user.html">User</a></li>
+          <li><a class="nav-link scrollto" href="#pricing">Pricing</a></li>
+          <li><a class="nav-link scrollto" href="index.html">Contact</a></li>
         </ul>
       </nav>
       <i class="bi bi-list mobile-nav-toggle"></i>
@@ -87,6 +102,7 @@
       </div>
     </section>
 
+
   <section>
     <div class = "container"> 
     <div class="section-title">
@@ -96,7 +112,7 @@
   </div>
   </section>
 
-  <section class="ftco-section">
+  <section class="ftco-section bg-light">
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -121,42 +137,104 @@
               <div class="d-flex mb-3">
                 <p class="price ml-auto">55 BAM <span>per day</span></p>
               </div>
-              <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="car-wrap rounded ftco-animate">
-            <div class="img rounded d-flex align-items-end" style="background-image: url(slikeAuta/series2electric.webp);">
-            </div>
-            <div class="text">
-              <h2 class="mb-0"><a href="car-single.html">BMW Series 2 Electric</a></h2>
-              <div class="d-flex mb-3">
-                <p class="price ml-auto">80 BAM <span>per day</span></p>
+              
+             <!-- Slide 1 -->
+             <div class="swiper-slide">
+              <div class="col-md-4">
+                <div class="car-wrap rounded ftco-animate">
+                  <div class="img rounded d-flex align-items-end" style="background-image: url(slikeAuta/toyota.jpeg);"></div>
+                  <div class="text">
+                    <h2 class="mb-0"><a href="car-single.html">Toyota C-HR Hybrid</a></h2>
+                    <div class="d-flex mb-3">
+                      <p class="price ">65 BAM <span>per day</span></p>
+                    </div>
+                    <p class="d-flex mb-0 d-block">
+                      <a href="electricDetail.html" class="BookNowButton"><span class="ButtonText">BOOK NOW</span></a>
+                      <a href="electricDetail.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                    </p>
+                  </div>
+                </div>
               </div>
-              <p class="d-flex mb-0 d-block"><a href="#" class="btn btn-primary py-2 mr-1">Book now</a> <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a></p>
+              <div class="col-md-4">
+                <div class="car-wrap rounded ftco-animate">
+                  <div class="img rounded d-flex align-items-end" style="background-image: url(slikeAuta/bmwi3.jpeg);"></div>
+                  <div class="text">
+                    <h2 class="mb-0"><a href="car-single.html">BMW i3 Electric</a></h2>
+                    <div class="d-flex mb-3">
+                      <p class="price ">55 BAM <span>per day</span></p>
+                    </div>
+                    <p class="d-flex mb-0 d-block">
+                      <a href="#" class="BookNowButton"><span class="ButtonText">BOOK NOW</span></a>
+                      <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="car-wrap rounded ftco-animate">
+                  <div class="img rounded d-flex align-items-end" style="background-image: url(slikeAuta/series2electric.webp);"></div>
+                  <div class="text">
+                    <h2 class="mb-0"><a href="car-single.html">BMW Series 2 Electric</a></h2>
+                    <div class="d-flex mb-3">
+                      <p class="price ">80 BAM <span>per day</span></p>
+                    </div>
+                    <p class="d-flex mb-0 d-block">
+                      <a href="#" class="BookNowButton"><span class="ButtonText">BOOK NOW</span></a>
+                      <a href="car-single.html" class="btn btn-secondary py-2 ml-1">Details</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-
-        
-      <div class="row mt-5">
-        <div class="col text-center">
-          <div class="block-27">
-            <ul>
-              <li><a href="#">&lt;</a></li>
-              <li class="active"><span>1</span></li>
-              <li><a href="#">2</a></li>
-              <li><a href="#">3</a></li>
-              <li><a href="#">4</a></li>
-              <li><a href="#">5</a></li>
-              <li><a href="#">&gt;</a></li>
-            </ul>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
           </div>
         </div>
       </div>
+    </section>
+
+    <!-- ======= Footer ======= -->
+ <footer id="footer">
+  <div class="footer-top">
+    <div class="container text-center">
+  
+      <a href="index.html" class="buttonNoDropUp">Home</a>
+    <div class="dropup">
+    <button class="dropbtn">About <i class="bi bi-chevron-up"></i></a></button>
+    <div class="dropup-content">
+      <a href="index.html#bio">Bio</a>
+      <a href="index.html#contact">Contact</a>
+      <a href="conditions.html">Conditions</a>
+    </div></div>
+    <a href="pricing.html" class="buttonNoDropUp">Pricing</a>
+  <div class="dropup">
+    <button class="dropbtn">Cars<i class="bi bi-chevron-up"></i></button>
+    <div class="dropup-content">
+      <a href="hatchback.html">Hatchback</a>
+      <a href="sedan.html">Sedan</a>
+      <a href="wagon.html">Wagon</a>
+      <a href="minivan.html">Minivan</a>
+      <a href="SUV.html">SUV</a>
+      <a href="electric.html">Electric</a>
     </div>
-  </section>
+  </div>
+  <div class="dropup">
+    <button class="dropbtn">English<i class="bi bi-chevron-up"></i></button>
+    <div class="dropup-content">
+      <a href="#">Bosanski</a>
+      <a href="#">Deutsch</a>
+    </div>
+  </div>
+  <a href="user.html" class="buttonNoDropUp">User</a>
+    </div>
+  </div>
+</div>
+</div>
+  </footer>
+
+<!-- End Footer -->
 
 
 
